@@ -1,0 +1,36 @@
+\title{Refactoring and Code Style: Adding a Loop}
+\date{2021-11-08}
+\author{rileyshahar}
+
+\import{macros01}
+
+\p{Our example does the same thing a bunch of times. We can easily rewrite this in
+a loop:}
+
+\codeblock{\startverb%
+i=0
+j=1
+
+k=0
+while k<8:
+    print(j)
+    i,j=j,i+j
+    k+=1
+\stopverb}
+
+\p{This is an example of a basic principle of coding:}
+
+\put\transclude/toc{false}
+\put\transclude/numbered{false}
+
+\scope{
+  \transclude{dry}
+  \transclude{dry-vs-wet}
+}
+
+\em{Question: Why might we want to avoid repeating ourselves?}
+
+\scope{
+  \put\transclude/expanded{false}
+  \transclude{why-dry}
+}

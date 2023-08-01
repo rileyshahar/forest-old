@@ -1,0 +1,16 @@
+\title{special types of morphisms}
+\date{2023-07-26}
+\author{rileyshahar}
+
+\p{In a [category](category), one can consider numerous special types of
+morphisms.}
+
+\scope{
+  \put\transclude/numbered{false}
+  \query{
+    \query/and{
+      \query/taxon{definition}
+      \query/tag{special-morphism}
+    }
+  }
+}

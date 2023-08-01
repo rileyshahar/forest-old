@@ -1,0 +1,10 @@
+\title{mono-epi duality}
+\date{2023-07-27}
+\author{rileyshahar}
+\tag{categorical-duality}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{[Monomorphisms](monomorphism) and [epimorphisms](epimorphism) are [dual](categorical-duality).}

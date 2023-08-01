@@ -1,0 +1,20 @@
+\title{DRY is Not Absolute}
+\date{2021-11-08}
+\author{rileyshahar}
+
+\import{macros01}
+
+\p{Like most principles, [DRY](dry) is not absolute: you might not always want to
+deduplicate repeated code. One possible reason it might be is if code is
+duplicated by coincidence. Sometimes you have two pieces of code that look the
+same, but they're subject to different requirements, and so if you deduplicate
+via a loop or function, you could end up needing to undo that change later in
+the line. If you're not careful, you can end up with functions with 80 different
+optional arguments, each of which makes a small change to the behavior, because
+you tried to cram all of your seemingly duplicated code into functions, and then
+later needed to add arguments to configure the behavior of the function. One
+solution to this is \em{WET}, or Write Everything Twice, an alternative to DRY. It
+holds that the first two duplications might be a coincidence, but the third
+probably indicates there's some fundamental commonality between the problems
+you're trying to solve, and so after the third duplication you should start
+deduplicating."}

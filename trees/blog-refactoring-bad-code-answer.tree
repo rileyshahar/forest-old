@@ -1,0 +1,23 @@
+\title{Refactoring and Code Style: Some Bad Code Solution}
+\date{2021-11-08}
+\author{rileyshahar}
+
+\import{macros01}
+
+\p{This code prints the first eight [Fibonacci
+numbers](https://en.wikipedia.org/wiki/Fibonacci_number). To do so, it relies on
+this "simultaneous assignment" notation, \code{i,j=j,i+j}, which updates
+\code{i} and \code{j} simultaneously in the way you'd expect, following the
+Fibonacci recursion.}
+
+\codeblock{
+$ python fib.py
+1
+1
+2
+3
+5
+8
+13
+21
+}

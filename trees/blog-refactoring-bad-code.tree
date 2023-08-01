@@ -1,0 +1,47 @@
+\title{Refactoring and Code Style: Some Bad Code}
+\date{2021-11-08}
+\author{rileyshahar}
+
+\import{macros01}
+
+\p{We're going to start by looking at an example of pretty bad code:}
+
+\codeblock{\startverb%
+i=0
+j=1
+print(j)
+i,j=j,i+j
+print(j)
+i,j=j,i+j
+print(j)
+i,j=j,i+j
+print(j)
+i,j=j,i+j
+print(j)
+i,j=j,i+j
+print(j)
+i,j=j,i+j
+print(j)
+i,j=j,i+j
+print(j)
+\stopverb}
+
+\em{Question: what is this code doing? Answer this without actually running the
+code in the terminal.}
+
+\scope{
+  \put\transclude/title{Answer}
+  \put\transclude/expanded{false}
+  \put\transclude/toc{false}
+  \put\transclude/numbered{false}
+  \transclude{blog-refactoring-bad-code-answer}
+}
+
+\p{One aspect of refactoring is that you want to make sure you don't break your
+code, since the whole point is to improve it without changing its behavior.
+Later, we're going to write \em{unit tests}, which will help us verify this
+automatically. For now, I suggest running the file after every modification you
+make and ensuring it has \em{precisely} the same command-line behavior.}
+
+\em{Question: what are some issues with this code?}
+

@@ -1,0 +1,9 @@
+\title{blog}
+\author{rileyshahar}
+
+\scope{
+  \put\transclude/numbered{false}
+  \query{
+    \query/taxon{blog post}
+	}
+}

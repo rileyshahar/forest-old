@@ -1,0 +1,15 @@
+\title{retract}
+\date{2023-07-27}
+\taxon{definition}
+\author{rileyshahar}
+\tag{special-morphism}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{
+  Suppose #{x\xrightarrow{s}y\xrightarrow{r}x = 1_x}.
+  Then #{s} is a \em{section} or \em{pre-inverse} and #{r} is a \em{retract} or
+  \em{post-inverse}.
+}

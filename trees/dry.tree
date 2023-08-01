@@ -1,0 +1,7 @@
+\title{Don't Repeat Yourself}
+\date{2021-11-08}
+\author{rileyshahar}
+
+\p{Don't Repeat Yourself, or \em{DRY}, is a code syle guideline which states
+roughly that any unit of functionality should have a \em{single source of
+truth}, an unambiguous single cite where that functionality is implemented.}

@@ -1,0 +1,25 @@
+\title{contravariant functor}
+\date{2023-07-27}
+\taxon{definition}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{
+  A \em{contravariant functor} #{F} between [categories](category) #{C} and
+  #{D} is a [functor](functor) out of the [opposite category](opposite-category):
+}
+
+\tex{
+	\begin{tikzcd}
+		C^\text{op} & & D \\
+		x & \mapsto & Fx \\
+		& \mapsto \\
+		y & \mapsto & Fy\punctuation{.}
+		\arrow["F", from=1-1, to=1-3]
+		\arrow["f"', from=4-1, to=2-1]
+		\arrow["Ff"', from=2-3, to=4-3]
+	\end{tikzcd}
+}

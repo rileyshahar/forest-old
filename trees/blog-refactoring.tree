@@ -1,0 +1,278 @@
+\title{Refactoring and Code Style}
+\date{2021-11-08}
+\author{rileyshahar}
+\taxon{blog post}
+
+\p{These are notes from a workshop I co-ran for students in Reed College's
+introductory CS course, [CS121](https://jimfix.github.io/csci121/), which I TA.
+They assume some basic familiarity with python. The purpose is to teach some
+fundamental principles of code style through the lens of refactoring. Because
+obviously what the world needs most is more unqualified people writing informal
+blog posts about development, I thought I'd post them here.}
+
+\scope{
+  \put\transclude/title{Introduction}
+  \transclude{blog-refactoring-introduction}
+}
+
+\scope{
+  \put\transclude/title{Some Bad Code}
+  \transclude{blog-refactoring-bad-code}
+}
+
+\scope{
+  \put\transclude/title{Repetition}
+  \transclude{blog-refactoring-loop}
+}
+
+\scope{
+  \put\transclude/title{Naming}
+  \transclude{blog-refactoring-naming}
+}
+
+% ## Spacing
+%
+% Another readability issue: this code doesn't use any spacing between operators. Here's a better version:
+%
+% ```python
+% prev = 0
+% curr = 1
+%
+% count = 0
+% while count < 8:
+%     print(curr)
+%     prev, curr = curr, prev + curr
+%     count += 1
+% ```
+%
+% This is just visually easier to read, with clearer separation between variables.
+%
+% In fact, there's a whole encyclopedia of python formatting conventions, called "PEP 8" (PEP means "Python Enhancement Proposal"), and different universities and companies each have their own modifications and additions to these. You don't necessarily need to be so stringent as to follow this strictly in your own code, but it can be good to know.
+%
+% There are also tools that can automatically handle things like this kind of formatting for you. We'll hopefully talk about these more in another workshop, but I personally use the command-line tool `black` for python.
+%
+% ## Commenting
+%
+% Comments make our code infinitely more readable by explaining in spoken language exactly what the code is doing.
+%
+% ```python
+% """Compute the first 8 fibonacci numbers."""
+%
+% # initial values at (0,1)
+% prev = 0
+% curr = 1
+%
+% count = 0
+% while count < 8:  # repeat 8 times
+%
+%     # output the next number
+%     print(curr)
+%
+%     # update the numbers according to fibonacci rule: f(n) = f(n-1) + f(n-2)
+%     # using python's simultaneous assignment notation to allow this
+%     prev, curr = curr, prev + curr
+%
+%     # increment the counter
+%     count += 1
+% ```
+%
+% A few things to note:
+%
+% - On top is a _docstring_, or "documentation string". This is a special type of comment, written as a triple-quoted string, and placed at the start of a file, function, method, or class. Its purpose is to explain what the thing it documents does, without getting in to any of the details, so that anyone interested in using that object doesn't need to understand the implementation in order to understand how to use it. There are even tools that automatically collect all of your docstrings into a pretty set of HTML files, so you can browse the documentation without needing to look at the actual code.
+% - Comments can explain what the code does and/or how it does it, e.x. the comment which talks about simultaneous assignment.
+% - There is such a thing as overcommenting (to be honest, this example is probably overcommented), but it's way harder to overcomment than undercomment.
+%
+% _Question: why might overcommenting sometimes be bad?_
+%
+% ## For Loop
+%
+% To do the same thing some number of times, the convention is to use a `for` loop, instead of a `while` loop, like so:
+%
+% ```python
+% """Compute the first 8 fibonacci numbers."""
+%
+% # initial values at (0,1)
+% prev = 0
+% curr = 1
+%
+% # repeat 8 times
+% for _ in range(8):
+%
+%     # output the next number
+%     print(curr)
+%
+%     # update the numbers according to fibonacci rule: f(n) = f(n-1) + f(n-2)
+%     # using python's simultaneous assignment notation to allow this
+%     prev, curr = curr, prev + curr
+% ```
+%
+% The main reason to do this is so we can't accidentally forget to increment our index.
+%
+% Note the special variable `_`. This is a conventional variable name, sometimes called a "throwaway" or "black hole" variable, for when your variable isn't actually used. If we relied on the value of the counting variable to perform our computation, we could call it something like `count` or `index`.
+%
+% This is probably where I'd stop if I was just writing a short script to compute Fibonacci numbers, but if you were writing in a professional or collaborative environment, where there was potential for the requirements to change later, there's a lot more that you could do.
+%
+% ## Function Abstraction
+%
+% Right now, all our code is just sitting at the top level of our file. We should separate each piece of logic into its own function.
+%
+% _Exercise: do this. Think about how small your functions can or should get._
+%
+% Here's one example way to do this:
+%
+% ```python
+% """Compute the first 8 fibonacci numbers."""
+%
+%
+% def fib_step(prev, curr):
+%     """Return the new previous and current numbers according to the fibonacci rule."""
+%     # return (f(n-1), f(n-1) + f(n-2))
+%     return curr, prev + curr
+%
+%
+% def print_first_n_fib(n):
+%     """Print the first n fibonacci numbers."""
+%     # initial values at (0,1)
+%     prev = 0
+%     curr = 1
+%
+%     # repeat n times
+%     for _ in range(n):
+%
+%         # output the next number
+%         print(curr)
+%
+%         # update the numbers
+%         prev, curr = fib_step(prev, curr)
+%
+%
+% print_first_n_fib(8)
+% ```
+%
+% A few things to note:
+%
+% - The functions and arguments should be named descriptively and according to convention, similarly to the variable names.
+% - There's a docstring explaining what each function does. I really think short docstrings are extremely helpful, even for short functions, and like comments, it's much easier to underuse than overuse them.
+% - You need to call the function at the bottom: `print_first_n_fib(8)`, so the script keeps its command-line behavior.
+%
+% _Question: why are functions helpful here?_
+%
+% - Abstraction: our `first_n_fib` function doesn't need to know the specific Fibonacci recurrence relation in order to drive the loop that implements the relation. This helps us find bugs faster.
+% - Code reuse: say we later have a project where we need to compute the first eight [Lucas numbers](https://en.wikipedia.org/wiki/Lucas_number). We could import `fib_step` into that project, since the step is the same.
+%
+% ## Single Responsibility
+%
+% Right now, our `print_first_n_fib` function has two jobs: it's both responsible for _computing_ the first n Fibonacci numbers (using its helper function `fib_step`), and for _printing_ them to the terminal. Let's say that tomorrow, the powers that be decided that our code needs to compute the sum of the first 8 Fibonacci numbers, instead of just printing them out. Or, say we needed to write them to a file, instead of printing them. We would need to look through our code for actually computing the Fibonacci numbers (the process for which hasn't changed) in order to make either of these changes.
+%
+% Instead, we can refactor our code like so:
+%
+% ```python
+% """Compute the first 8 fibonacci numbers."""
+%
+%
+% def fib_step(prev, curr):
+%     """Return the new previous and current numbers according to the fibonacci rule."""
+%     # return (f(n-1), f(n-1) + f(n-2))
+%     return curr, prev + curr
+%
+%
+% def first_n_fib(n):
+%     """Return a list of the first n fibonacci numbers."""
+%     # initial values at (0,1)
+%     prev = 0
+%     curr = 1
+%
+%     # stores the computed values for later return
+%     ret = []
+%
+%     # repeat n times
+%     for _ in range(n):
+%
+%         # store the next number
+%         ret.append(curr)
+%
+%         # update the numbers
+%         prev, curr = fib_step(prev, curr)
+%
+%     return ret
+%
+%
+% def print_list(to_print):
+%     """Print each value in to_print."""
+%     for val in to_print:
+%         print(val)
+%
+%
+% lst = first_n_fib(8)
+% print_list(lst)
+% ```
+%
+% Now each of our functions has a single responsibility: `first_n_fib` is responsible for _computing_ the Fibonacci numbers, and `print_list` prints each item in an _arbitrary_ list, which, in this case, is our list of Fibonacci numbers. If we need to print another list, we can reuse the code we wrote for `print_list`, and if we need to do some other computation on the Fibonacci numbers, we can reuse the code to compute the first `n` numbers.
+%
+% This is an example of the "Single Responsibility Principle", or _SRP_. The SRP says that each function or class should be responsible for a single thing. What a "thing" means here is often left kind of vague and left to your best judgement. Another way to think of this principle is that each piece of code should have only a single reason to change: `first_n_fib` only changes if the definition of the Fibonacci numbers changes, `print_list` only changes if we decide there's a better way to print out lists (say, separated by commas, instead of newlines), and the code at the bottom changes in response to changes in the high-level requirements of our code; e.g., it could call a function `save_list_to_file` instead of `print_list`.
+%
+% ## Testing
+%
+% A major, major advantage of the SRP is _automated testing_. Here, we're going to use a tool called `pytest`, a very standard tool for automatic testing of python code. You can probably install it with `pip3 install -U pytest`. We'll talk more about testing in a future workshop, but the basic idea is that `pytest` looks for functions whose names start with `test_`. We can use the special `assert` keyword inside these functions to cause a test to fail if any arbitrary condition is false. Note that we couldn't have written code like this before we did the SRP refactor: `print_first_n_fib` didn't return anything, and testing printed output is much, much harder than testing return values.
+%
+% ```python
+% """Compute the first 8 fibonacci numbers."""
+%
+%
+% def fib_step(prev, curr):
+%     """Return the new previous and current numbers according to the fibonacci rule."""
+%     # return (f(n-1), f(n-1) + f(n-2))
+%     return curr, prev + curr
+%
+%
+% def first_n_fib(n):
+%     """Return a list of the first n fibonacci numbers."""
+%     # initial values at (0,1)
+%     prev = 0
+%     curr = 1
+%
+%     # stores the computed values for later return
+%     ret = []
+%
+%     # repeat n times
+%     for _ in range(n):
+%
+%         # store the next number
+%         ret.append(curr)
+%
+%         # update the numbers
+%         prev, curr = fib_step(prev, curr)
+%
+%     return ret
+%
+%
+% def print_list(to_print):
+%     """Print each value in to_print."""
+%     for val in to_print:
+%         print(val)
+%
+%
+% lst = first_n_fib(8)
+% print_list(lst)
+%
+%
+% def test_first_n_fib_0():
+%     """Test that `first_n_fib` is correct for n=0."""
+%     assert first_n_fib(0) == []
+%
+% def test_first_n_fib_2():
+%     """Test that `first_n_fib` is correct for n=2."""
+%     assert first_n_fib(2) == [1, 1]
+%
+% def test_first_n_fib_10():
+%     """Test that `first_n_fib` is correct for n=10."""
+%     assert first_n_fib(10) == [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+% ```
+%
+% Because our tests are in the same file as our code{{ footnote(content="In production code, you'd probably want a separate directory, `tests`, with a bunch of files with names like `test_fib.py`, each of which had these `test_`functions. Then `pytest` would automatically discover those tests without needing a command-line argument.") }}, we run pytest like `pytest fib.py`{{ footnote(content="Try it! Seriously, pytest is _awesome_. You're never going to test your code by hand ever again.") }} from the command line. You might rightly complain that we've duplicated code here (the tests are the same, except for the expected inputs and outputs): pytest has a feature which will let us fix this, but it's outside the scope of this workshop, unfortuantely. Again, we'll hopefully talk more about testing in another workshop, but it's super helpful for refactoring so we wanted to mention how it works: now we can run our tests after each refactor to make sure the refactor didn't break the part of our code that's tested.
+%
+% ## Addendum: Removing the List
+%
+% By some measures, this code is actually worse than what we had originally, because it needs to allocate an entire list, whereas before we just needed `prev` and `curr`. As a result, it'll be slightly slower, and it requires (even asymptotically) more storage space on the disk than the previous version did. In the workshop, we left it there. I'm a big believer in writing readable, testable, maintainable code before you focus on optimization: well-written code is generally easier to confidently optimize, and often code you're writing isn't really performance-sensitive: maybe there's a much bigger performance bottleneck in your codebase, or maybe you're just writing a one-time script for something and it's ok if it takes a little bit of extra time.
+%
+% That said, for the writeup, I wanted to give some suggestions about how to remove this extra list. The most idiomatic way to do this, in my opinion, is probably using a python feature called generators. This is outside the scope of 121, so I won't get into details here, but the idea is to "pause executing" the function at each fibonacci number, letting the caller do something with that number, and then only continuing when they ask for the next number. If you're interested, there are lots of resources online that can help you with this concept.

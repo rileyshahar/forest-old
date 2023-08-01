@@ -1,0 +1,50 @@
+\title{monoidal category}
+\date{2023-07-31}
+\taxon{definition}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{A \em{monoidal structure} on a [category](category) #{K} consists of the
+following data:}
+
+\ul{
+  \li{a [functor](functor) #{\otimes: K\times K\rightarrow K} called the \em{tensor
+product};}
+  \li{an object #{1_\otimes\in K} called the \em{tensor unit};}
+  \li{three [natural isomorphisms](natural-isomorphism):
+    \ul{
+      \li{#{\alpha_{x,y,z}: (x\otimes y)\otimes z\simeq x\otimes(y\otimes z)}, the \em{associator};}
+      \li{#{\lambda_x: 1_\otimes\otimes x\simeq x}, the \em{left unitor};}
+      \li{#{\rho_x: x\otimes 1_\otimes \simeq x}, the \em{right unitor}.}
+    }
+  }
+}
+
+\p{This data must satisfy the \em{triangle} and \em{pentagon} identities:}
+
+\tex{
+  \begin{tikzcd}
+    (x\otimes 1_\otimes)\otimes y & & x\otimes(1_\otimes\otimes y) \\
+    \\
+    & x\otimes y &
+    \arrow["\alpha_{x,1_\otimes,y}", from=1-1, to=1-3]
+    \arrow["\rho_x", from=1-1, to=3-2, swap]
+    \arrow["\lambda_x", from=1-3, to=3-2]
+  \end{tikzcd}
+}\tex{
+  \begin{tikzcd}
+    & (x\otimes y)\otimes(z\otimes w) & \\
+    \\
+    ((x\otimes y)\otimes z)\otimes w & & x\otimes (y\otimes (z\otimes w)) \\
+    \\
+    (x\otimes (y\otimes z))\otimes w & & x\otimes ((y\otimes z)\otimes w)\punctuation{.}
+    \arrow["\alpha_{x\otimes y, z, w}", from=3-1, to=1-2]
+    \arrow["\alpha_{x, y, z\otimes w}", from=1-2, to=3-3]
+    \arrow["\alpha_{x, y, z}\otimes 1_w", from=3-1, to=5-1, swap]
+    \arrow["1_x\otimes\alpha_{y, z, w}", from=5-3, to=3-3, swap]
+    \arrow["\alpha_{x, y\otimes z, w}", from=5-1, to=5-3, swap]
+  \end{tikzcd}
+}

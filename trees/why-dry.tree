@@ -1,0 +1,13 @@
+\title{Why DRY?}
+\date{2021-11-08}
+\author{rileyshahar}
+
+\p{[DRY](dry) has several benefits, including:}
+
+\ul{
+	\li{Modifiability: if it turns out that the requirements of a project change,
+	with code repetition you'd need to change all occurances of the code.}
+	\li{Error proneness: if one of our repeated copies of the same code had a
+	typo, it would be very difficult to catch and debug.}
+  \li{Readability: DRY makes it easier to identify common occurance in the code.}
+}

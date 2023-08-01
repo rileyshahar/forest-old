@@ -1,0 +1,14 @@
+\title{Riley Shahar}
+\author{rileyshahar}
+\meta{author}{false}
+
+\put\transclude/heading{false}
+\put\transclude/toc{false}
+\put\transclude/numbered{false}
+\transclude{rileyshahar}
+
+\put\transclude/heading{true}
+\put\transclude/toc{true}
+
+\transclude{about}
+\transclude{blog}

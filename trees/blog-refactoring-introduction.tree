@@ -1,0 +1,19 @@
+\title{Refactoring and Code Style: Introduction}
+\date{2021-11-08}
+\author{rileyshahar}
+
+\p{Refactoring is a process through which we make small, incremental changes to
+a piece of code, \em{without changing its external functionality}. Refactoring
+lets us improve the quality and structure of our code in order to make it easier
+to read, to modify, or to maintain. We're going to work through a simple piece
+of code, refactoring it step-by-step, and along the way we're going to talk
+about various fundamental ideas behind good code style.}
+
+\p{This is probably best read as an interactive experience. Think about each
+piece of code we show you and decide what changes you would make to it; maybe
+even download the code and make the changes on your machine. There are several
+times where we'll ask you explicitly to think about some questions: try to do so
+before you keep reading and see our answer. Also, think critically about what we
+tell you. While much of this comes from (our understanding of) the accumulated
+wisdom of several generations of programmers, there's also a significant degree
+of subjectivity in evaluating the quality of code.}

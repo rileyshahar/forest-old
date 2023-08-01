@@ -1,0 +1,12 @@
+\title{natural isomorphism}
+\date{2023-07-31}
+\taxon{definition}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{A \em{natural isomorphism} is a [natural
+transformation](natural-transformation) whose components are each
+[isomorphisms](isomorphism).}

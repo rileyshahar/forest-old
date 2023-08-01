@@ -1,0 +1,8 @@
+\title{multiplicative linear logic sequents}
+\date{2023-07-26}
+\taxon{definition}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
