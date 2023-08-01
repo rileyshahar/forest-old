@@ -99,6 +99,9 @@
               select="/tree/frontmatter/sourcePath" />' </xsl:if>
         </script>
 
+				<link rel="stylesheet"
+					href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/atom-one-light.min.css"></link>
+
         <script type="module" src="forester.js"></script>
         <title>
           <xsl:value-of select="/tree/frontmatter/title" />

@@ -11,6 +11,9 @@ function partition(array, isValid) {
   }, [[], []]);
 }
 
+const hljs = require('highlight.js');
+hljs.highlightAll();
+
 window.addEventListener("load", (event) => {
   autoRenderMath(document.body)
 
@@ -89,5 +92,3 @@ fetch("./forest.json")
 
     ninja.data = items
   });
-
-
