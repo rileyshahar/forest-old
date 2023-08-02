@@ -1,0 +1,31 @@
+\title{Refactoring and Code Style: Spacing}
+\date{2021-11-08}
+\author{rileyshahar}
+
+\import{macros01}
+
+Another readability issue: this code doesn't use any spacing between operators. Here's a better version:
+
+\codeblock{\startverb%
+prev = 0
+curr = 1
+
+count = 0
+while count < 8:
+    print(curr)
+    prev, curr = curr, prev + curr
+    count += 1
+\stopverb}
+
+This is just visually easier to read, with clearer separation between variables.
+
+In fact, there's a whole encyclopedia of python formatting conventions, called
+[PEP 8](https://peps.python.org/pep-0008/) (PEP means "Python Enhancement
+Proposal"), and different universities and companies each have their own
+modifications and additions to these. You don't necessarily need to be so
+stringent as to follow this strictly in your own code, but it can be good to
+know.
+
+There are also tools that can automatically handle things like this kind of
+formatting for you. I personally use the command-line tool \code{black} for
+python.

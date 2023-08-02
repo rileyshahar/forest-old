@@ -34,7 +34,7 @@ code in the terminal.}
   \put\transclude/expanded{false}
   \put\transclude/toc{false}
   \put\transclude/numbered{false}
-  \transclude{blog-refactoring-bad-code-answer}
+  \transclude{refactor-04}
 }
 
 \p{One aspect of refactoring is that you want to make sure you don't break your

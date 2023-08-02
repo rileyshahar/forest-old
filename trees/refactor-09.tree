@@ -1,0 +1,38 @@
+\title{Refactoring and Code Style: Naming}
+\date{2021-11-08}
+\author{rileyshahar}
+
+\import{macros01}
+
+\p{\code{i}, \code{j}, and \code{k} are not particularly easy to keep track of;
+it's easy to mistake \code{i} for \code{j} in particular.}
+
+\em{Exercise: think of better names.}
+
+\codeblock{\startverb%
+prev=0
+curr=1
+
+count=0
+while count<8:
+    print(curr)
+    prev,curr=curr,prev+curr
+    count+=1
+\stopverb}
+
+\p{This is an example of a \em{readability} refactor; its purpose is to make the
+code easier to read at a glance.}
+
+\p{\em{Question: why do we care about readability?}}
+
+\put\transclude/toc{false}
+\put\transclude/numbered{false}
+
+\scope{
+  \put\transclude/expanded{false}
+  \transclude{refactor-10}
+}
+
+\scope{
+  \transclude{refactor-11}
+}

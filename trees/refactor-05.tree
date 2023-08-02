@@ -24,13 +24,13 @@ while k<8:
 \put\transclude/numbered{false}
 
 \scope{
-  \transclude{dry}
-  \transclude{dry-vs-wet}
+  \transclude{refactor-06}
+  \transclude{refactor-07}
 }
 
 \em{Question: Why might we want to avoid repeating ourselves?}
 
 \scope{
   \put\transclude/expanded{false}
-  \transclude{why-dry}
+  \transclude{refactor-08}
 }

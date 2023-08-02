@@ -1,0 +1,19 @@
+\title{Considerations for variable names}
+\date{2021-11-08}
+\author{rileyshahar}
+
+\ul{
+	\li{\em{Convention}. The names \code{prev} and \code{curr} are conventionally
+	used for iterative procedures when you need to keep track of the two previous
+	values. Many programmers will automatically know the meanings of variables
+	like \code{prev} and \code{curr} just from their names because they've read
+	other code that used those same conventions. Other examples of this: \code{n}
+	for some kind of bound, \code{ret} or \code{out} for the value that's going to
+	be returned at the end, \code{self} for the reciever of a method.}
+  \li{\em{Length}. Avoid one-letter names except in rare cases (a very short
+	loop index, or \code{n} for a bound). Also avoid unnecessarily long names like
+	\code{the_fibonacci_number_that_i_calculated_previously}.}
+  \li{\em{Word Delineation}. \code{thepreviousnumber} is harder to read than
+	\code{thePreviousNumber} or \code{the\em{previous}number}. The first style is
+	called \code{camelCase} and the second is \code{snake_case}.}
+}

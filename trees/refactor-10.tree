@@ -1,0 +1,21 @@
+\title{why care about readability?}
+\date{2021-11-08}
+\author{rileyshahar}
+
+\ul{
+	\li{Code review: anyone reading with your code, be it your friends or
+	professors or future-evil-corporate-boss (or your friendly TA graders! :P)
+	will find it much easier if they can... you know... read the code easily. That
+	will let them spend more mental energy helping you and less mental energy
+	asking questions like "what did that variable mean again?"}
+  \li{Other maintainers: similarly, you'll often not be the only one
+	\em{writing} the code. Following naming conventions is super important in
+	collaborative projects, because even if the name makes sense to you ("I always
+	use \code{l} for a list, why can't I do that?"), it won't make sense to your
+	collaboratos.}
+  \li{Future you: one important lesson from development is that, even on solo
+	projects, you should treat \em{future you} like another person. In a week, you
+	won't remember a single thing about the specific choices you make writing this
+	code; nevermind in a month or five years. Make sure your code is readable for
+	your own sake.}
+}

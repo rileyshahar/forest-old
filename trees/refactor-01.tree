@@ -12,45 +12,29 @@ blog posts about development, I thought I'd post them here.}
 
 \scope{
   \put\transclude/title{Introduction}
-  \transclude{blog-refactoring-introduction}
+  \transclude{refactor-02}
 }
 
 \scope{
   \put\transclude/title{Some Bad Code}
-  \transclude{blog-refactoring-bad-code}
+  \transclude{refactor-03}
 }
 
 \scope{
   \put\transclude/title{Repetition}
-  \transclude{blog-refactoring-loop}
+  \transclude{refactor-05}
 }
 
 \scope{
   \put\transclude/title{Naming}
-  \transclude{blog-refactoring-naming}
+  \transclude{refactor-09}
 }
 
-% ## Spacing
-%
-% Another readability issue: this code doesn't use any spacing between operators. Here's a better version:
-%
-% ```python
-% prev = 0
-% curr = 1
-%
-% count = 0
-% while count < 8:
-%     print(curr)
-%     prev, curr = curr, prev + curr
-%     count += 1
-% ```
-%
-% This is just visually easier to read, with clearer separation between variables.
-%
-% In fact, there's a whole encyclopedia of python formatting conventions, called "PEP 8" (PEP means "Python Enhancement Proposal"), and different universities and companies each have their own modifications and additions to these. You don't necessarily need to be so stringent as to follow this strictly in your own code, but it can be good to know.
-%
-% There are also tools that can automatically handle things like this kind of formatting for you. We'll hopefully talk about these more in another workshop, but I personally use the command-line tool `black` for python.
-%
+\scope{
+  \put\transclude/title{Spacing}
+  \transclude{refactor-12}
+}
+
 % ## Commenting
 %
 % Comments make our code infinitely more readable by explaining in spoken language exactly what the code is doing.
