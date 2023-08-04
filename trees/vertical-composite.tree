@@ -1,0 +1,14 @@
+\title{Vertical composite}
+\date{2023-08-02}
+\taxon{definition}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{Let #{F\xRightarrow{\alpha} G} and #{G\xRightarrow{\beta} H} be [natural
+transformations](natural-transformation) with components #{\alpha_x} and
+#{\beta_x}, respectively. Then their \em{vertical composite}
+#{F\xRightarrow{\beta\alpha} H} is a natural transformation with components
+#{(\beta\alpha)_x = \beta_x\alpha_x}.}

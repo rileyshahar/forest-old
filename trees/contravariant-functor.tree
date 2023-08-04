@@ -19,7 +19,7 @@
 		& \mapsto \\
 		y & \mapsto & Fy\punctuation{.}
 		\arrow["F", from=1-1, to=1-3]
-		\arrow["f"', from=4-1, to=2-1]
-		\arrow["Ff"', from=2-3, to=4-3]
+		\arrow["f"', from=2-1, to=4-1]
+		\arrow["Ff"', from=4-3, to=2-3]
 	\end{tikzcd}
 }

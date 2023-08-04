@@ -11,4 +11,3 @@
 \put\transclude/toc{true}
 
 \transclude{about}
-\transclude{blog}

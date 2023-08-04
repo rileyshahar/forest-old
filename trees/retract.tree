@@ -2,7 +2,7 @@
 \date{2023-07-27}
 \taxon{definition}
 \author{rileyshahar}
-\tag{special-morphism}
+\tag{structure:morphism}
 
 \texpackage{preamble}
 \texpackage{quiver}

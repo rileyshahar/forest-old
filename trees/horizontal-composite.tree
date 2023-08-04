@@ -1,0 +1,27 @@
+\title{horizontal composite}
+\date{2023-08-02}
+\taxon{definition}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{Let #{C\xrightarrow{F,F'}D} and #{D\xrightarrow{G,G'}E} be
+[functors](functor) with #{F\xRightarrow{\alpha} F'} and #{G\xRightarrow{\beta}
+G'} [natural transformations](natural-transformation). Then their \em{horizontal
+composite} #{GF\xRightarrow{\beta*\alpha} G'F'} is a natural transformation  with
+components given by the following commutative square:}
+\tex{
+	\begin{tikzcd}
+		GFx & & GF'x \\
+		\\
+		G'Fx & & G'F'x
+		\arrow["\beta_{Fx}", from=1-1, to=3-1, swap]
+		\arrow["G\alpha_x", from=1-1, to=1-3]
+		\arrow["G'\alpha_x", from=3-1, to=3-3, swap]
+		\arrow["\beta_{F'x}"', from=1-3, to=3-3, swap]
+		\arrow["(\beta*\alpha)_x", from=1-1, to=3-3, dashed]
+		\punctuation{.}
+	\end{tikzcd}
+}

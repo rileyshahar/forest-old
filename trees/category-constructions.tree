@@ -1,0 +1,11 @@
+\title{Category constructions}
+\taxon{list}
+
+\p{The following are all constructions on [categories](category):}
+
+\scope{
+  \put\transclude/numbered{false}
+  \query{
+		\query/tag{construction:category}
+  }
+}

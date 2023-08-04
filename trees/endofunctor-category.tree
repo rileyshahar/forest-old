@@ -1,0 +1,19 @@
+\title{endofunctor category}
+\date{2023-08-02}
+\taxon{definition}
+\author{rileyshahar}
+\tag{construction:category}
+\tag{ex:monoidal-category}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{The \em{endofunctor category} [#{[C, C]}](functor-category) over a
+[category](category) #{C} is a [strict monoidal category](strict-monoidal-category)
+ with:}
+
+\ul{
+  \li{[horizontal composition](horizontal-composite) as the tensor product;}
+  \li{the [identity functor](identity-functor) as the tensor unit.}
+}
