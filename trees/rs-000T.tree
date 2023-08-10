@@ -1,0 +1,12 @@
+\title{relation}
+\date{2023-08-07}
+\taxon{definition}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{A \em{relation} #{R} between [sets](set) #{X} and #{Y} is a subset of the
+[cartesian product](cartesian-product) #{X\times Y}. We write #{xRy} when #{(x,
+y)\in R}.}

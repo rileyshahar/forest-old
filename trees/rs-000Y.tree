@@ -1,0 +1,12 @@
+\title{partial order}
+\date{2023-08-07}
+\taxon{definition}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{A \em{partial order} is a [reflexive](rs-000U),
+[transitive](rs-000W), and [antisymmetric](rs-000X)
+ [relation](rs-000T).}

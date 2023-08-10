@@ -1,0 +1,19 @@
+\title{endofunctor category}
+\date{2023-08-02}
+\taxon{definition}
+\author{rileyshahar}
+\tag{construction:rs-0001}
+\tag{ex:rs-000N}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{The \em{endofunctor category} [#{[C, C]}](rs-000G) over a
+[category](rs-0001) #{C} is a [strict monoidal category](rs-000O)
+ with:}
+
+\ul{
+  \li{[horizontal composition](rs-000L) as the tensor product;}
+  \li{the [identity functor](rs-000F) as the tensor unit.}
+}

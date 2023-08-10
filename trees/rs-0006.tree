@@ -1,0 +1,13 @@
+\title{isomorphism}
+\date{2023-07-26}
+\taxon{definition}
+\author{rileyshahar}
+\tag{structure:morphism}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{A morphism #{x\xrightarrow{f}y} in a [category](rs-0001) #{C} is an
+\em{isomorphism} if there exists an \em{inverse morphism} 
+#{y\xrightarrow{g}x} such that #{fg = 1_y} and #{gf = 1_x}.}

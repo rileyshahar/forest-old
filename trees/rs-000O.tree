@@ -1,0 +1,13 @@
+\title{strict monoidal category}
+\date{2023-08-02}
+\taxon{definition}
+\author{rileyshahar}
+\tag{structure:rs-0001}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{A \em{strict monoidal category} is a [monoidal category](rs-000N)
+ for which the associators and unitors are each the [identity natural
+transformation](rs-000K).}

@@ -1,0 +1,14 @@
+\title{monomorphism}
+\date{2023-07-26}
+\taxon{definition}
+\author{rileyshahar}
+\tag{structure:morphism}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{A morphism #{x\xrightarrow{f}y} in a [category](rs-0001) #{C} is a
+\em{monomorphism} if for any parallel morphisms
+#{z\xrightarrow{h,k} x}, #{fh = fk} implies #{h =
+k}.}

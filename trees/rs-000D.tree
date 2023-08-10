@@ -1,0 +1,11 @@
+\title{endofunctor}
+\date{2023-08-02}
+\taxon{definition}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{An \em{endofunctor} over a [category](rs-0001) #{C} is a [functor](rs-000C)
+#{C\rightarrow C}.}

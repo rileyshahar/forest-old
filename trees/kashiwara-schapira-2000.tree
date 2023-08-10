@@ -1,0 +1,29 @@
+\title{categories and sheaves}
+\taxon{reference}
+\author{Masaki Kashiwara}
+\author{Pierre Schapira}
+\meta{isbn}{3-540-27949-0}
+\meta{bibtex}{\startverb%
+@book{kashiwara-schapira-2000,
+	title = "Categories and Sheaves",
+	author = { "Kashiwara, Masaki", "Schapira, Pierre" },
+	publisher = "Springer",
+	year = 2000,
+}\stopverb}
+
+\p{Categories and sheaves, which emerged in the middle of the last century as an
+enrichment for the concepts of sets and functions, appear almost everywhere in
+mathematics nowadays.}
+
+\p{This book covers categories, homological algebra and sheaves in a systematic
+and exhaustive manner starting from scratch, and continues with full proofs to
+an exposition of the most recent results in the literature, and sometimes
+beyond.}
+
+\p{The authors present the general theory of categories and functors,
+emphasising inductive and projective limits, tensor categories, representable
+functors, ind-objects and localization. Then they study homological algebra
+including additive, abelian, triangulated categories and also unbounded derived
+categories using transfinite induction and accessible objects. Finally, sheaf
+theory as well as twisted sheaves and stacks appear in the framework of
+Grothendieck topologies.}

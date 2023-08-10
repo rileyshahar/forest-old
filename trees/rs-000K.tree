@@ -1,0 +1,14 @@
+\title{identity natural transformation}
+\date{2023-08-08}
+\taxon{definition}
+\author{rileyshahar}
+\tag{ex:rs-000I}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{The \em{identity natural transformation} #{F\xRightarrow{1_F} F} over a
+[functor](rs-000C) #{F} has the identity morphism #{1_{Fx}} for each of its
+components.}
+

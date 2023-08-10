@@ -1,0 +1,12 @@
+\title{identity functor}
+\date{2023-08-08}
+\taxon{definition}
+\author{rileyshahar}
+\tag{ex:rs-000C}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{The \em{identity functor} #{C\xrightarrow{1_C} C} over a [category](rs-0001)
+ #{C} acts as the identity on both objects and morphisms.}

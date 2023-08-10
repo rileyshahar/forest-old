@@ -1,0 +1,19 @@
+\title{functor category}
+\date{2023-08-02}
+\taxon{definition}
+\author{rileyshahar}
+\tag{construction:rs-0001}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{Fix [categories](rs-0001) #{C} and #{D}. The \em{functor category} #{[C,
+D]} consists of:}
+\ul{
+  \li{[functors](rs-000C) #{C\rightarrow D} as objects;}
+  \li{[natural transformations](rs-000I) as morphisms;}
+  \li{[vertical composition](rs-000M) as composition;}
+  \li{the [identity natural transformations](rs-000K) as
+  identities.}
+}

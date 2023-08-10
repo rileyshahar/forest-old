@@ -1,0 +1,27 @@
+\title{natural transformation}
+\date{2023-07-27}
+\taxon{definition}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{A \em{natural transformation} #{F\xRightarrow{\alpha} G} between
+	[functors](rs-000C) #{C\xrightarrow{F,G}D} consists of, for each
+	object #{c\in C}, a morphism #{Fc\xrightarrow{\alpha_c} Gc\in D}, called the
+  \em{components} of #{\alpha}.}
+
+\p{This data must preserve morphisms in #{C}, in the sense that for
+any morphism #{x\xrightarrow{f} y\in C}, the square}
+\tex{
+  \begin{tikzcd}
+    Fx & Gx \\
+    Fy & Gy
+    \arrow["Ff", from=1-1, to=2-1, swap]
+    \arrow["\alpha_x", from=1-1, to=1-2]
+    \arrow["\alpha_y", from=2-1, to=2-2, swap]
+    \arrow["Gf"', from=1-2, to=2-2, swap]
+  \end{tikzcd}
+}
+\p{must commute.}

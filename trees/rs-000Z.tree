@@ -1,0 +1,13 @@
+\title{equivalence relation}
+\date{2023-08-08}
+\taxon{definition}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{An \em{equivalence relation} is a [reflexive](rs-000U),
+[symmetric](rs-000V), and [transitive](rs-000W)
+ [relation](rs-000T).}
+

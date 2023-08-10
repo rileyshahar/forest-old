@@ -1,0 +1,21 @@
+\title{functor}
+\date{2023-07-27}
+\taxon{definition}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{A \em{functor} #{F: C\rightarrow D} between [categories](rs-0001) #{C} and
+    #{D} consists of the following data:}
+\ul{
+  \li{for each object #{c\in C}, an object #{Fc\in D};}
+  \li{for each morphism #{f\in C(x, y)}, a morphism #{Ff\in D(Fx, Fy)}.}
+}
+
+\p{This data must preserve the categorical structure, that is:}
+\ul{
+  \li{for each #{x\xrightarrow{f}y\xrightarrow{g}z\in C}, #{(Fg) (Ff) = F(gf)};}
+  \li{for each #{c\in C}, #{F1_c = 1_{Fc}.}}
+}

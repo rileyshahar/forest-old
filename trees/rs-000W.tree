@@ -1,0 +1,11 @@
+\title{transitive relation}
+\date{2023-08-08}
+\taxon{definition}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{A [relation](rs-000T) #{\sim} is \em{transitive} if for any #{x,y,z}, if
+#{x\sim y} and #{y\sim z}, then #{x\sim z}.}

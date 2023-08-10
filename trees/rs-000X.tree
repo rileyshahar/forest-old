@@ -1,0 +1,11 @@
+\title{symmetric relation}
+\date{2023-08-08}
+\taxon{definition}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{A [relation](rs-000T) #{\sim} is \em{antisymmetric} if for any #{x,y}, if
+#{x\sim y}, then not #{y\sim x}.}

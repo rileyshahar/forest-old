@@ -1,0 +1,12 @@
+\title{groupoid}
+\date{2023-07-27}
+\taxon{definition}
+\author{rileyshahar}
+\tag{structure:rs-0001}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{A \em{groupoid} is a [category](rs-0001) whose morphisms are each
+[isomorphisms](rs-0006).}
