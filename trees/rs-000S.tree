@@ -1,8 +1,12 @@
-\title{multiplicative linear logic sequents}
-\date{2023-07-26}
+\title{continuous function}
+\date{2023-08-10}
 \taxon{definition}
 \author{rileyshahar}
 
 \texpackage{preamble}
 \texpackage{quiver}
 \import{macros01}
+
+\p{A \em{continuous function} between [topological spaces](rs-000R) #{T} and #{S}
+ is a function #{f} such that, for each open set #{U\in S}, its
+ [preimage](TODO) #{f^{-1}(U)} is open in #{T}.}

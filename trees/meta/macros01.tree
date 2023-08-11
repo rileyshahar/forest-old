@@ -56,3 +56,4 @@
 
 \def\codeblock[source]{\pre{\code{\source}}}
 \def\highlighted[lang][source]{\codeblock{\source}}
+\def\emptyset{\varnothing}
