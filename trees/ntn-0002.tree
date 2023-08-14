@@ -1,0 +1,11 @@
+\title{notational consistency is desirable}
+\date{2023-08-14}
+\taxon{Note}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{Even across different fields, it's desirable to maintain as consistent a
+notational convention as possible, to reduce overhead in context-switching.}

@@ -14,12 +14,6 @@
 }
 
 \p{Composition is given contrapositively, as in the equality}
-#{
-  x\xleftarrow{f^\text{op}g^\text{op}} z =
-  x\xleftarrow{f^\text{op}}y\xleftarrow{g^\text{op}}z =
-  x\xleftarrow{(gf)^\text{op}}z.
+##{
+  g^\text{op};f^\text{op} = (f;g)^{\text{op}}.
 }
-
-% This construction means that almost every theorem in category theory has a
-% \emph{dual theorem} obtainable by purely mechanically reversing all the arrows
-% in the proof.

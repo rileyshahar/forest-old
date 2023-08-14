@@ -1,0 +1,13 @@
+\title{left-to-right composition}
+\date{2023-08-14}
+\taxon{notation}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{Morphism composition is more naturally expressed in left-to-right application
+order; this reflects diagrammatic and (for anglophones) linguistic convention.
+Since convention dictates that #{fg} means #{g} then #{f}, we use #{f; g} to
+mean #{f} then #{g}.}

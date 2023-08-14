@@ -1,0 +1,13 @@
+\title{notating identities}
+\date{2023-08-14}
+\taxon{notation}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{Due to the [desirability of consistent notations](ntn-0002), we always prefer
+#{1_x} as the notation for an identity on some object or operation #{x}; for
+example, we prefer #{1_G} for the identity of a multiplcative [group](TODO)
+#{G}, where #{e} is somewhat more conventional.}
