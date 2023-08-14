@@ -1,0 +1,28 @@
+\title{covariant hom-functor}
+\date{2023-08-12}
+\taxon{definition}
+\author{rileyshahar}
+\tag{ex:rs-000C}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{Fixing an object #{c} of some [category](rs-0001) #{C}, the \em{covariant
+hom-[functor](rs-000C) at c}, #{C(c, -)}, takes a map to its action by
+post-composition:}
+
+\tex{
+	\begin{tikzcd}
+		C & & Set \\
+		x & \mapsto & C(c, x) & c & & x\\
+		& \mapsto & & & \downmapsto & \\
+		y & \mapsto & C(c, y) & c & x & y\punctuation{.}
+    \arrow["C(c{,} -)", from=1-1, to=1-3]
+    \arrow["m"', from=2-1, to=4-1]
+    \arrow["C(c{,} m)", from=2-3, to=4-3]
+    \arrow["f", from=2-4, to=2-6]
+    \arrow["f"', from=4-4, to=4-5]
+    \arrow["m"', from=4-5, to=4-6]
+	\end{tikzcd}
+}

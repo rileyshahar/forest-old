@@ -1,0 +1,13 @@
+\title{product category}
+\date{2023-08-13}
+\taxon{definition}
+\author{rileyshahar}
+\tag{construction:rs-0001}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{The \em{product} of two categories #{C} and #{D} has pairs of objects as
+objects, pairs of morphisms as morphisms, pairs of identities as identities, and
+composition component-wise.}

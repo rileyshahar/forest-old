@@ -11,11 +11,12 @@
     #{D} consists of the following data:}
 \ul{
   \li{for each object #{c\in C}, an object #{Fc\in D};}
-  \li{for each morphism #{f\in C(x, y)}, a morphism #{Ff\in D(Fx, Fy)}.}
+	\li{for each morphism #{x\xrightarrow{f} y} in #{C}, a morphism
+	#{Fx\xrightarrow{Ff} Fy} in #{D}.}
 }
 
 \p{This data must preserve the categorical structure, that is:}
 \ul{
-  \li{for each #{x\xrightarrow{f}y\xrightarrow{g}z\in C}, #{(Fg) (Ff) = F(gf)};}
+  \li{for each #{x\xrightarrow{f}y\xrightarrow{g}z} in #{C}, #{(Fg) (Ff) = F(gf)};}
   \li{for each #{c\in C}, #{F1_c = 1_{Fc}.}}
 }

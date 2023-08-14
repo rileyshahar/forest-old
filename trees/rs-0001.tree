@@ -10,7 +10,7 @@
 \p{A \em{category} #{C} consists of the following data:}
 \ul{
   \li{a collection of objects, overloadingly also called #{C};}
-  \li{for each pair of objects #{x,y\in C}, a collection of \em{morphisms} #{C(x, y)};}
+  \li{for each pair of objects #{x,y\in C}, a collection of \em{morphisms} #C(x, y);}
   \li{for each object #{x\in C}, a designated \em{identity morphism}
       #{x\xrightarrow{1_x} x};}
   \li{for each pair of morphisms #{x\xrightarrow{f} y\xrightarrow{g} z}, a

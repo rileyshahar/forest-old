@@ -1,0 +1,11 @@
+\title{bifunctor}
+\date{2023-08-13}
+\taxon{definition}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{A \em{bifunctor} is a [functor](rs-000C) out of a [product
+category](rs-0012).}

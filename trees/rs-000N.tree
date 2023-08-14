@@ -12,7 +12,7 @@
 following data:}
 
 \ul{
-  \li{a [functor](rs-000C) #{\otimes: K\times K\rightarrow K} called the \em{tensor
+  \li{a [bifunctor](rs-0014) #{\otimes: K\times K\rightarrow K} called the \em{tensor
 product};}
   \li{an object #{1_\otimes\in K} called the \em{tensor unit};}
   \li{three [natural isomorphisms](rs-000J):
