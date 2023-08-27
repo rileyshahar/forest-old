@@ -1,0 +1,21 @@
+\title{categories are higher-dimensional posets}
+\date{2023-08-24}
+\taxon{connection}
+
+\p{A [poset](rs-000Y) is just a set (hence a #{0}-groupoid) #{X} together with a
+function #{X\rightarrow X\rightarrow\text{Prop}} satisfying some axioms. A
+[category](rs-0001) is just a (#{1}-)[groupoid](rs-0007) #{X} together with a
+functor #{X\rightarrow X\rightarrow\text{Set}} satisfying analogous axioms.}
+
+\p{In particular:}
+
+\ul{
+  \li{Identities are just higher-dimensional [reflexivity](rs-000U).}
+  \li{Composition is just higher-dimensional [transitivity](rs-000W).}
+  \li{The analogue of [antisymmetry](rs-000X) guarantees that the hom functor
+  doesn't introduce new equivalences; hence that new structure respects the
+  original groupoid.}
+}
+
+In addition, as usual with higher-dimensional structures we need to ask for some
+coherence conditions, namely associativity and unitality.

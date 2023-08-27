@@ -1,0 +1,7 @@
+\title{faithful functor}
+\date{2023-08-16}
+\taxon{definition}
+\author{rileyshahar}
+\tag{structure:rs-000C}
+
+\p{A [functor](rs-000C) is \em{faithful} if its action on hom-sets is injective.}

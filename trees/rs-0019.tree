@@ -1,0 +1,9 @@
+\title{essentially surjective on objects}
+\date{2023-08-16}
+\taxon{definition}
+\author{rileyshahar}
+\tag{structure:rs-000C}
+
+\p{A [functor](rs-000C) #{C\xrightarrow{F}D} is \em{essentially surjective on objects} if for every
+#{d\in D}, there is a #{c\in C} such that #{Fc} is [isomorphic](rs-0006) to
+#{d}.}

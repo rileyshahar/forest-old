@@ -1,0 +1,11 @@
+\title{Functor structures}
+\taxon{list}
+
+\p{The following are all structures on [functors](rs-000C):}
+
+\scope{
+  \put\transclude/numbered{false}
+  \query{
+		\query/tag{structure:rs-000C}
+  }
+}

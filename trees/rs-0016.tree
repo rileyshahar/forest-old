@@ -1,0 +1,18 @@
+\title{strict #{n}-category}
+\date{2023-08-14}
+\taxon{definition}
+\author{rileyshahar}
+\tag{ex:rs-0015}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\ul{
+  \li{A \em{strict #{0}-category} is a set.}
+  \li{A \em{strict #{(n+1)}-category} is a [category](rs-0001)
+  [enriched](rs-0015) over #{nCat}, the category of all strict #{n}-categories.}
+}
+
+For the definition to make sense, it must hold that #{nCat} is
+[monoidal](rs-000N);
