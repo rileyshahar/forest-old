@@ -1,0 +1,12 @@
+\title{ring}
+\date{2023-08-27}
+\taxon{definition}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{A \em{ring} is a set #{R} which is both an [abelian group](rs-001J) #{(R, +)}
+ and a [monoid](rs-001G) #{(R, \times)}, such that multiplication distributes
+over addition, i.e. ##{r\times(s + q) = r\times s + r\times q.}}

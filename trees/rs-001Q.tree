@@ -1,0 +1,21 @@
+\title{algebraic structures}
+\date{2023-08-28}
+\taxon{list}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{The following are all algebraic structures:}
+
+\transclude{rs-001R}
+\transclude{rs-001D}
+\transclude{rs-001G}
+\transclude{rs-001H}
+\transclude{rs-001J}
+\transclude{rs-001K}
+\transclude{rs-001L}
+\transclude{rs-001M}
+\transclude{rs-001O}
+\transclude{rs-001P}

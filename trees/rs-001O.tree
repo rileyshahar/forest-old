@@ -1,0 +1,11 @@
+\title{vector space}
+\date{2023-08-28}
+\taxon{definition}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{A \em{vector space} over a [field](rs-001L) #{F}, or just an \em{#{F}-vector
+space}, is a [module](rs-001M) over #{F}.}

@@ -1,0 +1,11 @@
+\title{identity of a binary operation}
+\date{2023-08-27}
+\taxon{definition}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{An \em{identity} for a [binary operation] #{\cdot} on a set #{X} is an
+element #{e\in X} such that #{e\cdot x = x\cdot e = x} for all #{x\in X}.}

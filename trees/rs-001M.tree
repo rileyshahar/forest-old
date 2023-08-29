@@ -1,0 +1,19 @@
+\title{module}
+\date{2023-08-28}
+\taxon{definition}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{A \em{module} over a [ring](rs-001K) #{R}, or just an \em{#{R}-module}, is an
+[abelian group](rs-001J) #{(M, +)} together with an [action](rs-001N) #{R\acts
+M} which preserves the following structure:}
+
+\ul{
+  \li{identities: #{1_R\cdot x = x}, #{0_r\cdot x = 0_m};}
+  \li{distributivity: #{r\cdot(x+y) = r\cdot x + r\cdot y}, #{(r+s)\cdot x =
+  r\cdot x + s\cdot x};}
+  \li{multipication: #{r\cdot (s\cdot x) = (rs)\cdot x}.}
+}

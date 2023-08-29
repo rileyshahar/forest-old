@@ -8,5 +8,5 @@
 \import{macros01}
 
 \p{A \em{relation} #{R} between [sets](set) #{X} and #{Y} is a subset of the
-[cartesian product](cartesian-product) #{X\times Y}. We write #{xRy} when #{(x,
+[cartesian product](rs-001C) #{X\times Y}. We write #{xRy} when #{(x,
 y)\in R}.}

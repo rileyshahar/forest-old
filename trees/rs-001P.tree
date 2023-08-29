@@ -1,0 +1,13 @@
+\title{algebra}
+\date{2023-08-28}
+\taxon{definition}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{An \em{algebra} over a [ring](rs-001K) #{R}, or just an \em{#{R}-algebra}, is
+an #{R}-[module](rs-001M) which is also itself a ring, such that the action
+#{R\acts A} commutes with the multiplication of #{A}, as in ##{r\cdot (ab) =
+(r\cdot a)b = a(r\cdot b).}}

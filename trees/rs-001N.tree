@@ -1,0 +1,14 @@
+\title{action}
+\date{2023-08-28}
+\taxon{definition}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{An \em{action} of a set #{Y} on a set #{X}, #{Y\acts X}, is a function
+##{Y\times X\rightarrow X.}}
+
+\p{Often, we consider actions of a structured set, in which case we ask that the
+action preserve additional structure.}

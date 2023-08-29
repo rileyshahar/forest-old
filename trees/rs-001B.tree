@@ -1,0 +1,11 @@
+\title{binary operation}
+\date{2023-08-27}
+\taxon{definition}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{A \em{binary operation} on a set #{X} is a function [#{X\times
+X}](rs-001C)#{\rightarrow X}.}
