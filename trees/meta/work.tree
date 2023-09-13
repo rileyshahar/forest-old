@@ -10,6 +10,7 @@
       \query/or{
         \query/taxon{talk}
         \query/taxon{paper}
+        \query/taxon{exposition}
       }
     }
   }

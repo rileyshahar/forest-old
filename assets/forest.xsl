@@ -294,6 +294,14 @@
     </li>
   </xsl:template>
 
+  <xsl:template match="meta[@name='pdf']">
+    <li class="meta-item">
+      <a class="external" href="{.}">
+        <xsl:text>PDF</xsl:text>
+      </a>
+    </li>
+  </xsl:template>
+
   <xsl:template match="meta[@name='tex']">
     <li class="meta-item">
       <a class="external">
@@ -366,6 +374,7 @@
           <xsl:apply-templates select="meta[@name='orcid']" />
           <xsl:apply-templates select="meta[@name='external']" />
           <xsl:apply-templates select="meta[@name='slides']" />
+          <xsl:apply-templates select="meta[@name='pdf']" />
 					<xsl:apply-templates select="meta[@name='tex']" />
           <xsl:apply-templates select="meta[@name='video']" />
         </ul>

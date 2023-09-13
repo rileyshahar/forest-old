@@ -5,8 +5,8 @@
 \author{rileyshahar}
 
 \meta{venue}{[Reed CS Colloquium](https://www.reed.edu/computer-science/seminars/)}
-\meta{tex}{/slides/sources/shahar-2023-reed.zip}
-\meta{slides}{/slides/shahar-2023-reed.pdf}
+\meta{tex}{/slides/sources/shahar-2023-reed-colloquium.zip}
+\meta{slides}{/slides/shahar-2023-reed-colloquium.pdf}
 
 \p{Linear logic is a logic of limited resources, useful in practice for writing
 safe programs. Girard's phase semantics, which may be instantiated with any

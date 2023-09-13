@@ -1,0 +1,16 @@
+\title{the joy of cryptography}
+\date{2023-09-13}
+\author{Mike Rosulek}
+\taxon{reference}
+\meta{isbn}{9781466570269}
+\meta{url}{https://joyofcryptography.com}
+\meta{bibtex}{\startverb %
+@ebook{joyofcryptography,
+		title        = "The Joy of Cryptography",
+		author       = "Mike Rosulek",
+		note         = "\url{https://joyofcryptography.com}",
+		url          = "https://joyofcryptography.com"
+}\stopverb}
+
+\p{The Joy of Cryptography is a free undergraduate-level textbook that
+introduces students to the fundamentals of provable security.}
