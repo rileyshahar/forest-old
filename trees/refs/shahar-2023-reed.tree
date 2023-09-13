@@ -5,8 +5,10 @@
 \author{rileyshahar}
 \tag{talk}
 
+\meta{venue}{Reed Computer Science Colloquium}
 \meta{tex}{https://github.com/rileyshahar/phase-semantics-talk}
 \meta{slides}{/slides/shahar-2023-reed.pdf}
+
 
 \p{Linear logic is a logic of limited resources, useful in practice for writing
 safe programs. Girard's phase semantics, which may be instantiated with any
