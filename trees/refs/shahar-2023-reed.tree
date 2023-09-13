@@ -1,14 +1,12 @@
 \title{categorical phase semantics for linear logic}
 \date{2023-09-12}
-\taxon{reference}
+\taxon{talk}
 
 \author{rileyshahar}
-\tag{talk}
 
 \meta{venue}{[Reed CS Colloquium](https://www.reed.edu/computer-science/seminars/)}
-\meta{tex}{https://github.com/rileyshahar/phase-semantics-talk}
+\meta{tex}{/slides/sources/shahar-2023-reed.zip}
 \meta{slides}{/slides/shahar-2023-reed.pdf}
-
 
 \p{Linear logic is a logic of limited resources, useful in practice for writing
 safe programs. Girard's phase semantics, which may be instantiated with any
