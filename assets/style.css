@@ -99,16 +99,27 @@ img,
 .katex-display,
 section,
 center {
-  overflow-x: scroll;
   overflow-y: hidden;
 }
 
 pre {
+  border-radius: var(--radius);
+  background-color: rgba(0, 100, 100, 0.04);
+  padding: .5em;
   font-size: 11pt;
   margin-top: 0em;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
 }
 
 code {
+  border-radius: var(--radius);
+  background-color: rgba(0, 100, 100, 0.04);
+  padding: 0.2em;
   font-size: 11pt;
 }
 
@@ -136,8 +147,15 @@ body {
   display: none;
 }
 
-.block[data-taxon="Reference"]>details>summary>header>.leaf>span.taxon,
-.block[data-taxon="Person"]>details>summary>header>.leaf>span.taxon {
+article>section>details>summary>header>h1>.taxon {
+  display: block;
+  font-size: .9em;
+  color: #888;
+  padding-bottom: 5pt;
+}
+
+section section[data-taxon="Reference"]>details>summary>header>h1>.taxon,
+section section[data-taxon="Person"]>details>summary>header>h1>.taxon {
   display: none;
 }
 
@@ -207,7 +225,7 @@ details h1 {
   display: inline;
 }
 
-details h1.leaf {
+section .block[data-taxon]>details>summary>header>h1 {
   font-size: 12pt;
 }
 
@@ -215,19 +233,13 @@ span.taxon {
   color: #444;
 }
 
-h1.tree span.taxon {
-  display: block;
-  font-size: .9em;
-  color: #888;
-  padding-bottom: 5pt;
-}
 
 .link-list>section>details>summary>header h1 {
   font-size: 12pt;
 }
 
 
-article>section>details>summary>header>h1.tree {
+article>section>details>summary>header>h1 {
   font-size: 1.5em;
 }
 
@@ -302,10 +314,6 @@ nav#toc ul {
   background-color: rgba(0, 100, 255, 0.04);
 }
 
-.dark .block:hover {
-  background-color: rgba(255, 255, 255, 0.04);
-}
-
 .block.highlighted {
   border-style: solid;
   border-width: 1pt;
@@ -321,18 +329,6 @@ nav#toc ul {
   border-color: #aaa;
 }
 
-.dark .highlighted {
-  background-color: rgba(255, 174, 69, 0.2);
-  border-style: solid;
-  border-width: 1pt;
-  border-color: rgba(255, 174, 69, 0.3);
-}
-
-.dark .highlighted:hover {
-  background-color: rgba(255, 174, 69, 0.4);
-  border-color: rgba(255, 174, 69, 0.4);
-}
-
 .block>.block-uid {
   visibility: hidden;
   display: flex;
@@ -343,15 +339,15 @@ nav#toc ul {
   visibility: visible;
 }
 
-.dark img.latex {
-  filter: invert(0.884);
-}
-
 .slug,
 .doi,
 .orcid {
-  font-family: "Merriweather";
   color: gray;
+  font-weight: 200;
+}
+
+.edit-button {
+  color: rgb(180, 180, 180);
   font-weight: 200;
 }
 
@@ -374,10 +370,6 @@ nav#toc ul {
 
 .block:hover>.toggle-children-button {
   visibility: visible;
-}
-
-.dark .toggle-children-button {
-  filter: invert(1);
 }
 
 a.external {
@@ -445,10 +437,6 @@ td.macro-doc {
 
 .enclosing.macro-scope>.enclosing:hover {
   background-color: rgba(0, 100, 255, 0.1);
-}
-
-.dark .enclosing.macro-scope>.enclosing:hover {
-  background-color: rgba(255, 255, 255, 0.04);
 }
 
 [aria-label][role~="tooltip"]::after {
@@ -522,7 +510,7 @@ td.macro-doc {
   color: var(--secondary);
 }
 
-.tree-content blockquote {
+blockquote {
   border-inline-start: 1px solid var(--secondary);
 }
 
