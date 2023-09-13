@@ -1,0 +1,18 @@
+\title{categorical phase semantics for linear logic}
+\date{2023-09-12}
+\taxon{reference}
+
+\author{rileyshahar}
+\tag{talk}
+
+\meta{tex}{https://github.com/rileyshahar/phase-semantics-talk}
+\meta{slides}{/slides/shahar-2023-reed.pdf}
+
+\p{Linear logic is a logic of limited resources, useful in practice for writing
+safe programs. Girard's phase semantics, which may be instantiated with any
+(classical) monoid, are a canonical model of this logic. We give a categorical
+generalization of phase semantics to monoid objects in certain categories,
+filling an existing hole in the categorical semantics of linear logic. Along the
+way, we introduce and motivate the project of categorical semantics, assuming no
+knowledge of category theory or logic. This talk presents research with Steve
+Zdancewic at the UPenn PLClub group, supported by the REPL NSF REU site.}

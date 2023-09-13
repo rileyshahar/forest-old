@@ -58,3 +58,7 @@
 \def\highlighted[lang][source]{\codeblock{\source}}
 \def\emptyset{\varnothing}
 \def\acts{\curvearrowright}
+\def\join{\vee}
+\def\Join{\bigvee}
+\def\meet{\wedge}
+\def\Meet{\bigwedge}

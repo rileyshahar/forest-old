@@ -11,3 +11,14 @@
 \put\transclude/toc{true}
 
 \transclude{about}
+
+\scope{
+  \put\transclude/title{My Talks}
+  \query{
+    \query/and{
+      \query/author{rileyshahar}
+      \query/taxon{reference}
+      \query/tag{talk}
+    }
+  }
+}

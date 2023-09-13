@@ -283,6 +283,16 @@
     </li>
   </xsl:template>
 
+  <xsl:template match="meta[@name='tex']">
+    <li class="meta-item">
+      <a class="external">
+        <xsl:attribute name="href">
+          <xsl:value-of select="." />
+        </xsl:attribute>
+        <xsl:text>TeX</xsl:text>
+      </a>
+    </li>
+  </xsl:template>
 
   <xsl:template match="meta[@name='video']">
     <li class="meta-item">
@@ -367,6 +377,7 @@
         <xsl:apply-templates select="meta[@name='orcid']" />
         <xsl:apply-templates select="meta[@name='external']" />
         <xsl:apply-templates select="meta[@name='slides']" />
+        <xsl:apply-templates select="meta[@name='tex']" />
         <xsl:apply-templates select="meta[@name='video']" />
       </ul>
     </div>

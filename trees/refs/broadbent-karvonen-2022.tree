@@ -1,0 +1,33 @@
+\title{categorical composable cryptography}
+\taxon{reference}
+\author{Anne Broadbent}
+\author{Martii Karvonen}
+\meta{isbn}{978-3-030-99253-8}
+\meta{bibtex}{\startverb%
+@incollection{broadbent-karvonen-2022,
+  AUTHOR = { "Broadbent, Anne", "Karvonen, Martti" },
+  TITLE = "Categorical composable cryptography",
+  BOOKTITLE = "Foundations of software science and computation structures",
+  SERIES = "Lecture Notes in Comput. Sci.",
+  VOLUME = 13242,
+  PAGES = 161--183,
+  PUBLISHER = "Springer, Cham",
+  YEAR = 2022,
+  ISBN = 978-3-030-99253-8,
+  DOI = 10.1007/978-3-030-99253-8\_9,
+  URL = "https://doi.org/10.1007/978-3-030-99253-8_9",
+}\stopverb}
+
+\p{We formalize the simulation paradigm of cryptography in terms of category
+theory and show that protocols secure against abstract attacks form a symmetric
+monoidal category, thus giving an abstract model of composable security
+definitions in cryptography. Our model is able to incorporate computational
+security, set-up assumptions and various attack models such as colluding or
+independently acting subsets of adversaries in a modular, flexible fashion. We
+conclude by using string diagrams to rederive the security of the one- time pad,
+correctness of Diffie-Hellman key exchange and no-go results concerning the
+limits of bipartite and tripartite cryptography, ruling out e.g., composable
+commitments and broadcasting. On the way, we exhibit two categorical
+constructions of resource theories that might be of independent interest: one
+capturing resources shared among multiple parties and one capturing resource
+conversions that succeed asymptotically.}

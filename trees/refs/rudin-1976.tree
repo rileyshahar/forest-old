@@ -1,0 +1,25 @@
+\title{principles of mathematical analysis}
+\taxon{reference}
+\author{Walter Rudin}
+\meta{isbn}{9781259064784}
+\meta{edition}{3}
+\meta{bibtex}{\startverb%
+@book{rudin-1976,
+  title={Principles of Mathematical Analysis},
+  author={Rudin, W.},
+  isbn={9781259064784},
+  lccn={75017903},
+  series={International series in pure and applied mathematics},
+  url={https://books.google.com/books?id=bejCsgEACAAJ},
+  year={1976},
+  publisher={McGraw-Hill}
+}\stopverb}
+
+\p{The third edition of this well known text continues to provide a solid
+foundation in mathematical analysis for undergraduate and first-year graduate
+students. The text begins with a discussion of the real number system as a
+complete ordered field. (Dedekind's construction is now treated in an appendix
+to Chapter I.) The topological background needed for the development of
+convergence, continuity, differentiation and integration is provided in Chapter
+2. There is a new section on the gamma function, and many new and interesting
+exercises are included.}
