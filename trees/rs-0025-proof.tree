@@ -1,0 +1,13 @@
+\title{proof of uniqueness of ordered fields with the lub property}
+\date{2023-08-31}
+\taxon{proof}
+\author{rileyshahar}
+
+\p{Let #{(F, +, \cdot, \leq)} and #{(G, +, \cdot, \leq)} be [ordered
+fields](rs-0022) satisfying the [lub property](rs-001Y). It suffices to
+construct an ordered field [isomorphism](rs-0006) #{F \xrightarrow{\varphi} G}.}
+
+\p{Let #{\mathbb{Q}\xrightarrow{f} F} and #{\mathbb{Q}\xrightarrow{g} G} be injective
+with images the [isomorphic copies of #{\mathbb{Q}}](rs-0027) in #{F} and #{G}.}
+
+\p{TODO.}

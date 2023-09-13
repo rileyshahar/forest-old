@@ -1,0 +1,12 @@
+\title{homomorphism}
+\date{2023-08-31}
+\taxon{definition}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{A \em{homomorphism} of [algebraic structures](rs-001Q) is a function which
+preserves (commutes with) all of the structure (operations, actions, and
+relations).}

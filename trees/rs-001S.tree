@@ -1,0 +1,13 @@
+\title{lie algebra}
+\date{2023-08-29}
+\taxon{definition}
+\author{rileyshahar}
+
+\p{A \em{Lie algebra} is a [vector space](rs-001O) #{\mathfrak{g}} together with
+a [binary operation](rs-001B) #{[-, -]}, its \em{Lie bracket}, satisfying:}
+
+\ul{
+  \li{\em{skew-symmetry}: #{[x, y] = -[y, x]};}
+  \li{\em{bilinearity}: #{[x+cy, z] = [x, z] + c[y, z]};}
+  \li{\em{the Jacobi identity}: #{[x, [y, z]] + [z, [x, y]] + [y, [x, z]] = 0}.}
+}

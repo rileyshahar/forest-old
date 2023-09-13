@@ -1,0 +1,8 @@
+\title{proof of ordered fields contain #{\mathbb{Q}} as a subfield}
+\date{2023-08-31}
+\taxon{proof}
+\author{rileyshahar}
+
+\p{By elementary properties of [ordered fields](rs-0022), any ordered field has
+[characteristic](rs-0026) #{0}, and hence contains a copy of #{\mathbb{Z}}.
+Closing under multiplicative inverses gives a copy of #{\mathbb{Q}}.}

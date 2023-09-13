@@ -1,0 +1,12 @@
+\title{order-theoretic duality}
+\date{2023-08-07}
+\taxon{observation}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{As a special case of [categorical duality](rs-0005), every definition in
+[order theory](rs-001U) admits a syntactic dual by reversing the order. We
+generally prefer to work in terms of #{\leq} rather than #{\geq}.}

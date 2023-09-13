@@ -1,0 +1,14 @@
+\title{construction of the real numbers}
+\date{2023-08-28}
+\taxon{narrative}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{Here, we give one story of the construction of the real numbers.}
+
+\transclude{rs-0022}
+\transclude{rs-0027}
+\transclude{rs-0025}

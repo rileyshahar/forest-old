@@ -1,0 +1,11 @@
+\title{preorder}
+\date{2023-08-31}
+\taxon{definition}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{A \em{preorder} is a [reflexive](rs-000U)
+ and [transitive](rs-000W) [relation](rs-000T).}

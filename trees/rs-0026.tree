@@ -1,0 +1,15 @@
+\title{characteristic}
+\date{2023-08-31}
+\taxon{proof}
+\author{rileyshahar}
+
+\p{The \em{characteristic} of a [ring](rs-001K) #{R}, #{\mathrm{char}R}, is:}
+
+\ul{
+  \li{the order of its underlying additive [group](rs-001H), if finite;}
+  \li{#{0}, otherwise.}
+}
+
+\p{Equivalently, let #{\varphi} be the unique ring
+[homomorphism](rs-0023) #{\mathbb{Z}\rightarrow R}. Then #{\mathrm{char}R} is
+the natural number such that #{\mathrm{ker}\varphi = (\mathrm{char}R)\mathbb{Z}}.}

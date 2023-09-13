@@ -1,0 +1,13 @@
+\title{uniqueness of ordered fields with the lub property}
+\date{2023-08-31}
+\taxon{theorem}
+\author{rileyshahar}
+
+\p{Any two [ordered fields](rs-0022) satisfying the [least upper bound property](rs-001Y)
+ are [isomorphic](rs-0006) as ordered fields.}
+
+\scope{
+  \put\transclude/title{}
+  \put\transclude/numbered{false}
+  \transclude{rs-0025-proof}
+}

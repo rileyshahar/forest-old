@@ -1,0 +1,16 @@
+\title{ordered field}
+\date{2023-08-31}
+\taxon{definition}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{An \em{ordered field} is a [field](rs-001L) #{(F, +, \cdot)} with a
+[total order](rs-001T) #{\leq}, compatible}
+
+\ul{
+  \li{additively: #{y < z} implies #{x + y < x + z};}
+  \li{multiplicatively: #{0 < x} and #{0 < y} implies #{0 < xy}.}
+}

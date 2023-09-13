@@ -1,0 +1,12 @@
+\title{bounded above}
+\date{2023-08-07}
+\taxon{definition}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{In a [partial ordered set](rs-000Y) #{(X, \leq)}, a set #{Y\subseteq X} is
+\em{bounded above} if there exists an #{x\in X} such that #{y\leq x} for every
+#{y\in Y}. Such an #{x} is an \em{upper bound} of #{Y}.}

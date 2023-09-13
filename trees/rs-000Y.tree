@@ -7,6 +7,5 @@
 \texpackage{quiver}
 \import{macros01}
 
-\p{A \em{partial order} is a [reflexive](rs-000U),
-[transitive](rs-000W), and [antisymmetric](rs-000X)
- [relation](rs-000T).}
+\p{A \em{partial order} is an [antisymmetric](rs-000X)
+ [preorder](rs-001V).}

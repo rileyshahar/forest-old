@@ -1,0 +1,7 @@
+\title{total order}
+\date{2023-08-31}
+\taxon{definition}
+\author{rileyshahar}
+
+\p{A [partial order](rs-000Y) is \em{total} if any two elements are comparable,
+i.e., either #{x\leq y} or #{y\leq x} for every #{x} and #{y} in the set.}

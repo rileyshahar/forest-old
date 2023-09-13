@@ -1,0 +1,17 @@
+\title{join}
+\date{2023-08-07}
+\taxon{definition}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{In a [partial ordered set](rs-000Y) #{(X, \leq)}, the \em{join},
+\em{supremum}, or \em{least upper bound} of a set #{Y\subseteq X}, if it exists,
+is an element #{\Join Y} such that:}
+
+\ul{
+ \li{#{\Join Y} is an [upper bound](rs-001W) of #{Y};}
+ \li{if #{z\leq \Join Y}, then #{z} is not an upper bound of #{Y}.}
+}

@@ -1,0 +1,12 @@
+\title{least upper bound property}
+\date{2023-08-07}
+\taxon{definition}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{A [partial order](rs-000Y) #{(X, \leq)} has the \em{least upper bound
+property} if every nonempty [bounded above](rs-001W) subset of #{X} has a [least
+upper bound](rs-001X).}

@@ -1,0 +1,12 @@
+\title{ordered fields contain #{\mathbb{Q}} as a subfield}
+\date{2023-08-31}
+\taxon{lemma}
+\author{rileyshahar}
+
+\p{Any ordered field contains a subfield isomorphic to #{\mathbb{Q}}.}
+
+\scope{
+  \put\transclude/title{}
+  \put\transclude/numbered{false}
+  \transclude{rs-0027-proof}
+}

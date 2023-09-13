@@ -1,0 +1,17 @@
+\title{lub property iff glb property}
+\date{2023-08-31}
+\taxon{theorem}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{A [poset](rs-000Y) has the [least upper bound property](rs-001Y) if and only
+if it has the ([dually](rs-001Z) defined) greatest lower bound property.}
+
+\scope{
+  \put\transclude/title{}
+  \put\transclude/numbered{false}
+  \transclude{rs-0020-proof}
+}

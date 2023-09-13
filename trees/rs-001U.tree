@@ -1,0 +1,22 @@
+\title{order theory}
+\date{2023-08-28}
+\taxon{collection}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\transclude{rs-000T}
+\transclude{rs-000U}
+\transclude{rs-000V}
+\transclude{rs-000X}
+\transclude{rs-000W}
+\transclude{rs-001V}
+\transclude{rs-000Y}
+\transclude{rs-001T}
+\transclude{rs-001W}
+\transclude{rs-001X}
+\transclude{rs-001Y}
+\transclude{rs-001Z}
+\transclude{rs-0020}

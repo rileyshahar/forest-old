@@ -12,7 +12,7 @@
 M} which preserves the following structure:}
 
 \ul{
-  \li{identities: #{1_R\cdot x = x}, #{0_r\cdot x = 0_m};}
+  \li{identities: #{1_R\cdot x = x}, #{0_R\cdot x = 0_M};}
   \li{distributivity: #{r\cdot(x+y) = r\cdot x + r\cdot y}, #{(r+s)\cdot x =
   r\cdot x + s\cdot x};}
   \li{multipication: #{r\cdot (s\cdot x) = (rs)\cdot x}.}

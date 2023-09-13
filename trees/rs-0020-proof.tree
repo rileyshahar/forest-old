@@ -1,0 +1,19 @@
+\title{proof of lub property iff glb property}
+\date{2023-08-31}
+\taxon{proof}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{Let [#{(X, \leq)}](rs-000Y) have the [lub property](rs-001Y); we show the glb
+property, and conclude by [duality](rs-001Z). Let #{Y\subseteq X} be nonempty
+and [bounded below](rs-001W). Let #{y\in Y}.}
+
+\p{Let #{L} be the set of lower bounds of #{Y}; #{L} is nonempty since #{Y} is
+bounded below. By definition of lower bound, #{l \leq y} for all #{l\in L}. Now
+#{L} is bounded above by #{y}, and hence has a supremum #{\Join L} by the lub
+property. By definition of the supremum and construction of #{L}, we have that
+#{\Join L\geq l} for any lower bound #{l} of #{Y}; hence #{\Join L = \Meet Y},
+completing the proof.}
