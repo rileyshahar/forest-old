@@ -286,6 +286,17 @@
     </li>
   </xsl:template>
 
+  <xsl:template match="meta[@name='ref-in']">
+		<xsl:variable name="at" select="../meta[@name='ref-at']"></xsl:variable>
+		<xsl:variable name="note" select="../meta[@name='ref-note']"></xsl:variable>
+		<span class="reference">
+      <a class="local" href="{$note}.xml">
+				<xsl:value-of select="." />
+      </a>,
+			<xsl:value-of select="$at" />
+		</span>
+  </xsl:template>
+
   <xsl:template match="meta[@name='slides']">
     <li class="meta-item">
       <a class="external" href="{.}">
@@ -360,6 +371,7 @@
         <xsl:apply-templates select="addr" />
         <xsl:text> </xsl:text>
         <xsl:apply-templates select="source-path" />
+				<xsl:apply-templates select="meta[@name='ref-in']" />
       </h1>
       <div class="metadata">
         <ul>
