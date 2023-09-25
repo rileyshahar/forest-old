@@ -3,9 +3,6 @@
 \author{rileyshahar}
 \taxon{talk}
 
-\meta{tex}{/slides/sources/shahar-2023-fundamental-groupoid.zip}
-\meta{slides}{/slides/shahar-2023-fundamental-groupoid.pdf}
-
 \p{We introduce basic category theory and construct the fundamental groupoid of
 a topological space, presenting the material developed
 [here](shahar-2023-fundamental-groupoid). Expository talk for Math 342 at Reed

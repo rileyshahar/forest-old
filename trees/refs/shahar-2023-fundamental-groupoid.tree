@@ -3,9 +3,6 @@
 \author{rileyshahar}
 \taxon{exposition}
 
-\meta{tex}{/papers/sources/shahar-2023-fundamental-groupoid.zip}
-\meta{pdf}{/papers/shahar-2023-fundamental-groupoid.pdf}
-
 \p{We introduce basic category theory and construct the fundamental groupoid of
 a topological space. Using homotopy as an analogy, we define natural
 transformations and equivalence of categories. We conclude with the homotopy

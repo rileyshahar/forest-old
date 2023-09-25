@@ -3,6 +3,10 @@
 \taxon{proof}
 \author{rileyshahar}
 
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
 \p{The \em{characteristic} of a [ring](rs-001K) #{R}, #{\mathrm{char}R}, is:}
 
 \ul{

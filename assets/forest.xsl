@@ -297,31 +297,33 @@
 		</span>
   </xsl:template>
 
-  <xsl:template match="meta[@name='slides']">
-    <li class="meta-item">
-      <a class="external" href="{.}">
-        <xsl:text>Slides</xsl:text>
-      </a>
-    </li>
+  <xsl:template match="tree/frontmatter/taxon" mode="header">
+    <span class="taxon">
+      <xsl:value-of select="." />
+      <xsl:if test="not(../trail/crumb)">
+        <xsl:text>. </xsl:text>
+      </xsl:if>
+    </span>
   </xsl:template>
 
-  <xsl:template match="meta[@name='pdf']">
-    <li class="meta-item">
-      <a class="external" href="{.}">
-        <xsl:text>PDF</xsl:text>
-      </a>
-    </li>
-  </xsl:template>
-
-  <xsl:template match="meta[@name='tex']">
-    <li class="meta-item">
-      <a class="external">
-        <xsl:attribute name="href">
-          <xsl:value-of select="." />
-        </xsl:attribute>
-        <xsl:text>TeX</xsl:text>
-      </a>
-    </li>
+  <xsl:template match="tree/frontmatter/taxon" mode="metadata">
+      <xsl:variable name="addr" select="/tree/frontmatter/addr" />
+      <xsl:if test="string() = 'Exposition' or string() = 'Publication'">
+        <li class="meta-item">
+          <a class="local" href="papers/{$addr}.pdf" >PDF</a>
+        </li>
+        <li class="meta-item">
+          <a class="local" href="papers/sources/{$addr}.zip" >TeX</a>
+        </li>
+      </xsl:if>
+      <xsl:if test="string() = 'Talk'">
+        <li class="meta-item">
+          <a class="local" href="slides/{$addr}.pdf" >Slides</a>
+        </li>
+        <li class="meta-item">
+          <a class="local" href="slides/sources/{$addr}.zip" >TeX</a>
+        </li>
+      </xsl:if>
   </xsl:template>
 
   <xsl:template match="meta[@name='video']">
@@ -330,15 +332,6 @@
         <xsl:text>Video</xsl:text>
       </a>
     </li>
-  </xsl:template>
-
-  <xsl:template match="tree/frontmatter/taxon">
-    <span class="taxon">
-      <xsl:value-of select="." />
-      <xsl:if test="not(../trail/crumb)">
-        <xsl:text>. </xsl:text>
-      </xsl:if>
-    </span>
   </xsl:template>
 
   <xsl:template match="trail">
@@ -360,7 +353,7 @@
   <xsl:template match="tree/frontmatter">
     <header>
       <h1>
-        <xsl:apply-templates select="taxon" />
+        <xsl:apply-templates select="taxon" mode="header" />
         <xsl:apply-templates select="trail" />
         <xsl:if test="trail/crumb">
           <xsl:text>. </xsl:text>
@@ -386,6 +379,7 @@
           <xsl:apply-templates select="meta[@name='orcid']" />
           <xsl:apply-templates select="meta[@name='external']" />
           <xsl:apply-templates select="meta[@name='slides']" />
+          <xsl:apply-templates select="taxon" mode="metadata" />
           <xsl:apply-templates select="meta[@name='pdf']" />
 					<xsl:apply-templates select="meta[@name='tex']" />
           <xsl:apply-templates select="meta[@name='video']" />
