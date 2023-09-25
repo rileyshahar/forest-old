@@ -182,7 +182,7 @@
             <xsl:value-of select="anchor" />
           </xsl:attribute>
           <span class="toc-item-label">
-            <xsl:apply-templates select="taxon" />
+            <xsl:apply-templates select="taxon" mode="header" />
             <xsl:apply-templates select="trail" />
             <xsl:if test="trail/crumb">
               <xsl:text>. </xsl:text>
