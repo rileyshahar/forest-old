@@ -154,15 +154,15 @@ article>section>details>summary>header>h1>.taxon {
   padding-bottom: 5pt;
 }
 
-article>section>details>summary>header>h1>.reference:before {
+.reference:before {
 	content:"("
 }
 
-article>section>details>summary>header>h1>.reference:after {
+.reference:after {
 	content:")"
 }
 
-article>section>details>summary>header>h1>.reference {
+.reference {
   font-weight: normal;
   font-size: .8em;
 }

@@ -207,25 +207,27 @@
   </xsl:template>
 
   <xsl:template match="authors">
-    <li class="meta-item">
-      <address class="author">
-        <xsl:for-each select="author">
-          <xsl:apply-templates />
-          <xsl:if test="position()!=last()">
-            <xsl:text>, </xsl:text>
-          </xsl:if>
-        </xsl:for-each>
-        <xsl:if test="contributor">
-          <xsl:text> with contributions from </xsl:text>
-          <xsl:for-each select="contributor">
-            <xsl:apply-templates />
-            <xsl:if test="position()!=last()">
-              <xsl:text>, </xsl:text>
-            </xsl:if>
-          </xsl:for-each>
-        </xsl:if>
-      </address>
-    </li>
+		<xsl:if test="./author[string()!='Riley Shahar'] or ../meta[@name='author']">
+			<li class="meta-item">
+				<address class="author">
+					<xsl:for-each select="author">
+							<xsl:apply-templates />
+							<xsl:if test="position()!=last()">
+								<xsl:text>, </xsl:text>
+							</xsl:if>
+					</xsl:for-each>
+					<xsl:if test="contributor">
+						<xsl:text> with contributions from </xsl:text>
+						<xsl:for-each select="contributor">
+							<xsl:apply-templates />
+							<xsl:if test="position()!=last()">
+								<xsl:text>, </xsl:text>
+							</xsl:if>
+						</xsl:for-each>
+					</xsl:if>
+				</address>
+			</li>
+		</xsl:if>
   </xsl:template>
 
   <xsl:template match="mainmatter">
