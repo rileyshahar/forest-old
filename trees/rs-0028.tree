@@ -1,0 +1,13 @@
+\title{computational indistinguishability}
+\date{2023-09-15}
+\author{rileyshahar}
+\taxon{definition}
+
+\meta{ref-in}{Lindell 2021}
+\meta{ref-at}{Section 2}
+\meta{ref-note}{lindell-2021-simulation}
+
+\p{Two [probability ensembles](TODO) #{X} and #{Y} are \em{computationally
+indistinguishable}, written #{X \equiv_C Y}, if for any [randomized](TODO)
+ [efficient](TODO) algorithm #{D} and fixed inputs to #{X} and #{Y}, we have
+##{\left| \Pr[D(X) = 1] - \Pr[D(Y) = 1] \right|} [negligible](rs-0029).}

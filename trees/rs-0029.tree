@@ -1,0 +1,8 @@
+\title{negligible function}
+\date{2023-09-15}
+\author{rileyshahar}
+\taxon{definition}
+
+\p{A function is [negligible](negligible) with respect to some class of
+functions #{F}, usually the [polynomials](TODO), if it is [asymptotically](TODO)
+ [#{o(1/F)}](TODO).}

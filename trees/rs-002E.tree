@@ -1,0 +1,15 @@
+\title{notes from categorical composable cryptography}
+\date{2023-09-25}
+\taxon{collection}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{These are my notes from the paper [\em{Categorical Composable
+Cryptography}](broadbent-karvonen-2022).}
+
+\transclude{rs-002A}
+\transclude{rs-002C}
+\transclude{rs-002D}

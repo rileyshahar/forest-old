@@ -1,0 +1,19 @@
+\title{the categories in categorical cryptography}
+\date{2023-09-25}
+\taxon{intuition}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{In the model of categorical cryptography due to [Broadbent &
+Karvonen](broadbent-karvonen-2022), we can understand the [categories](rs-0001) and
+[functors](rs-000C) #{D\xrightarrow{F}C\xrightarrow{R}Set} as follows.}
+
+\ul{
+  \li{The category #{D} is the space of "free" processes available to agents in the protocol.}
+  \li{The category #{C} is the space of possible actions available to the protocol or to a threat model.}
+  \li{The functor #{F} is "morally" an inclusion of #{D} into #{C}.}
+  \li{The elements of #{Rx} are "states" on the system #{x\in C}.}
+}

@@ -1,0 +1,20 @@
+\title{category of elements}
+\date{2023-09-25}
+\taxon{definition}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\tag{construction:rs-000C}
+\meta{ref-in}{Riehl}
+\meta{ref-at}{Definition 2.4.1}
+\meta{ref-note}{riehl-2017}
+
+\p{The \em{category of elements} #{\int F} of a [functor](rs-000C) #{F: C\rightarrow Set} has:}
+
+\ul{
+  \li{as objects, pairs #{(c, x)} where #{c\in C} and #{x\in F(c)};}
+  \li{as morphisms #{(c, x)\rightarrow (c', x')} those #{c\xrightarrow{f} c'} in #{C} such that #{F(f)(x) = x'}.}
+}

@@ -51,3 +51,26 @@
     \arrow["f"', from=1-1, to=2-2]
   \end{tikzcd}
 }
+
+\put\transclude/numbered{false}
+
+\scope{
+  \put\transclude/title{Examples}
+  \query{
+		\query/tag{ex:rs-0001}
+  }
+}
+
+\scope{
+  \put\transclude/title{Constructions}
+  \query{
+		\query/tag{construction:rs-0001}
+  }
+}
+
+\scope{
+  \put\transclude/title{Structures}
+  \query{
+		\query/tag{structure:rs-0001}
+  }
+}

@@ -167,6 +167,10 @@ article>section>details>summary>header>h1>.taxon {
   font-size: .8em;
 }
 
+details .reference {
+  display: none;
+}
+
 section section[data-taxon="Reference"]>details>summary>header>h1>.taxon,
 section section[data-taxon="Person"]>details>summary>header>h1>.taxon {
   display: none;

@@ -1,0 +1,19 @@
+\title{perfect security}
+\date{2023-09-25}
+\taxon{definition}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\meta{ref-in}{Broadbent & Karvonen}
+\meta{ref-at}{Definition 4.1}
+\meta{ref-note}{broadbent-karvonen-2022}
+
+\p{Let #{D\xrightarrow{F}C\xrightarrow{R}Set} be [functors](rs-000C). A morphism
+#{(d, x)\xrightarrow{f}(d', x')} in the [category of elements](rs-002B) #{\int
+RF} is \em{prefectly secure} against an [attack model](rs-002A) #{A}, or
+\em{#{A}-perfectly secure}, if for any ##{Fd\xrightharpoonup{a}_{Ff} z,} there
+exists a ##{Fd'\xrightharpoonup{a'}_{1_{Fd'}} z'} such that ##{(Ra)x =
+(Ra')x'.}}

@@ -20,3 +20,24 @@
   \li{for each #{x\xrightarrow{f}y\xrightarrow{g}z} in #{C}, #{(Fg) (Ff) = F(gf)};}
   \li{for each #{c\in C}, #{F1_c = 1_{Fc}.}}
 }
+
+\scope{
+  \put\transclude/title{Examples}
+  \query{
+		\query/tag{ex:rs-000C}
+  }
+}
+
+\scope{
+  \put\transclude/title{Constructions}
+  \query{
+		\query/tag{construction:rs-000C}
+  }
+}
+
+\scope{
+  \put\transclude/title{Structures}
+  \query{
+		\query/tag{structure:rs-000C}
+  }
+}

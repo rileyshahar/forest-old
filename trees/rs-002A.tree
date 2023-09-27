@@ -1,0 +1,60 @@
+\title{attack model}
+\date{2023-09-25}
+\taxon{definition}
+\author{rileyshahar}
+
+\meta{ref-in}{Broadbent & Karvonen}
+\meta{ref-at}{Definition 4.1}
+\meta{ref-note}{broadbent-karvonen-2022}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{An \em{attack model} #{A} against a [monoidal category](rs-000N) consists
+of, for each morphism #{f}, a class of morphisms #{A} which is closed and
+factors horizontally and vertically. We write #{\xrightharpoonup{f'}_f} for an
+attack #{f'\in A(f)}; commutative diagrams entail commutativity of both the
+target and the attack.}
+
+\p{Explicitly, the axioms are:}
+
+\ul{
+  \li{#{f\in A(f)};}
+  \li{if #{f'\in A(f)} and #{g'\in A(g)} and the composites exist, then #{g'f'\in A(gf)};}
+  \li{if #{h\in A(gf)} then #{h = g'f'} for #{g'\in A(g)} and #{f'\in A(f)};}
+  \li{if #{f'\in A(f)} and #{g'\in A(g)}, then #{f'\otimes g'\in A(f\otimes g)};}
+  \li{if #{h\in A(f\otimes g)} then #{h = h'\circ f'\otimes g'} for
+  #{f'\in A(f)}, #{g'\in A(g)}, and #{h'\in A(1_{\cod(f)\otimes\cod(g)})}.}
+}
+
+\p{This data is described by the following diagrams:}
+
+\tex{
+\begin{tikzcd}
+	x\ar[r, harpoon, "f", "f"'] & y
+\end{tikzcd}
+\begin{tikzcd}
+	x \ar[rr, bend right=120, harpoon, dashed]\ar[r, harpoon, "f'", "f"'] & y\ar[r, harpoon, "g'", "g"'] & z \\
+\end{tikzcd}
+\begin{tikzcd}
+	x \ar[rr, harpoon, "h", "fg"']\ar[dr, harpoon, dashed, "f"'] & & z \\
+  & y\ar[ur, harpoon, dashed, "g"']
+\end{tikzcd}
+}
+\tex{
+\begin{tikzcd}
+	x \ar[dd, harpoon', "f'"', "f"] & z\ar[dd, harpoon', "g'"', "g"] && x\otimes z
+  \ar[dd, harpoon', "f'\otimes g'"', "f\otimes g"]  \\
+  &&\Rightarrow\\
+	y & w && y\otimes w \\
+\end{tikzcd}
+}
+\tex{
+\begin{tikzcd}
+	x\otimes z\ar[rr, harpoon, "h", "f\otimes g"']\ar[ddr, harpoon, dashed,
+  "f'\otimes g'", "f\otimes g"'] && y\otimes w  \\
+  \\
+  & y\otimes w\punctuation{.}\ar[uur, harpoon, dashed, "h'", "1_{y\otimes w}"'] & \\
+\end{tikzcd}
+}
