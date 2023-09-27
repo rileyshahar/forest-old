@@ -21,11 +21,8 @@ target and the attack.}
 
 \ul{
   \li{#{f\in A(f)};}
-  \li{if #{f'\in A(f)} and #{g'\in A(g)} and the composites exist, then #{g'f'\in A(gf)};}
-  \li{if #{h\in A(gf)} then #{h = g'f'} for #{g'\in A(g)} and #{f'\in A(f)};}
-  \li{if #{f'\in A(f)} and #{g'\in A(g)}, then #{f'\otimes g'\in A(f\otimes g)};}
-  \li{if #{h\in A(f\otimes g)} then #{h = h'\circ f'\otimes g'} for
-  #{f'\in A(f)}, #{g'\in A(g)}, and #{h'\in A(1_{\cod(f)\otimes\cod(g)})}.}
+  \li{#{A(g\circ f) = A(g)\circ A(f)};}
+  \li{#{A(f\otimes g) = A(1_{\cod(f)\otimes\cod(g)})\circ(A(f)\otimes A(g))}.}
 }
 
 \p{This data is described by the following diagrams:}
