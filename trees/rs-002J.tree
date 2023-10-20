@@ -1,0 +1,11 @@
+\title{solvable lie algebra}
+\date{2023-10-20}
+\taxon{definition}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{A [Lie algebra](rs-001S) is \em{solvable} if its [derived series](rs-002I) is
+eventually #{0}.}

@@ -1,0 +1,11 @@
+\title{semisimple lie algebra}
+\date{2023-10-20}
+\taxon{definition}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{A [Lie algebra](rs-001S) is \em{semisimple} if its [radical](rs-002K) is
+#{0}.}

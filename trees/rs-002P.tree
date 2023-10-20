@@ -1,0 +1,12 @@
+\title{the general linear Lie algebra}
+\date{2023-10-20}
+\taxon{example}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{Let #{V} be a [vector space](rs-001O). The \em{general linear Lie algebra}
+ #{\fg\fl(V)} of #{V} is the vector space of [endomorphisms](TODO) on #{V},
+together with the bracket ##{[f, g] = fg - gf.}}

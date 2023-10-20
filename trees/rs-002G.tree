@@ -1,0 +1,11 @@
+\title{derived algebra}
+\date{2023-10-20}
+\taxon{definition}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{Let #{\fg} be a [Lie algebra](rs-001S). The \em{derived algebra} of #{\fg} is
+##{g' := [g, g] = \span\{[x, y] : x, y \in \fg\}.}}

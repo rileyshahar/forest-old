@@ -1,0 +1,12 @@
+\title{radical of a lie algebra}
+\date{2023-10-20}
+\taxon{definition}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{The \em{radical} of a [Lie algebra](rs-001S) is its maximal
+[solvable](rs-002J) [ideal](TODO).}
+

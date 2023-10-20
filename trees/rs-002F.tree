@@ -1,0 +1,12 @@
+\title{adjoint representation}
+\date{2023-10-20}
+\taxon{definition}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{Let #{\mathfrak{g}} be a [Lie algebra](rs-001S). Then the \em{adjoint
+representation} of #{\mathfrak{g}} is ##{\mathrm{ad}: \mathfrak{g} \to
+\mathfrak{gl}({\mathfrak{g}})\\x \mapsto [x,-].}}

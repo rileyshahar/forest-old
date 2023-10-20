@@ -1,0 +1,23 @@
+\title{Lie theory}
+\date{2023-10-20}
+\taxon{narrative}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\transclude{rs-001S}
+\transclude{rs-002P}
+\transclude{rs-002F}
+\transclude{rs-002G}
+\transclude{rs-002H}
+\transclude{rs-002I}
+\transclude{rs-002J}
+\scope{
+	\put\transclude/title{Radical}
+	\transclude{rs-002K}
+}
+\transclude{rs-002L}
+\transclude{rs-002N}
+\transclude{rs-002O}

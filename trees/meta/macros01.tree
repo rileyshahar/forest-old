@@ -54,6 +54,33 @@
 \def\YY{\mathbb{Y}}
 \def\ZZ{\mathbb{Z}}
 
+\def\fa{\mathfrak{a}}
+\def\fb{\mathfrak{b}}
+\def\fc{\mathfrak{c}}
+\def\fd{\mathfrak{d}}
+\def\fe{\mathfrak{e}}
+\def\ff{\mathfrak{f}}
+\def\fg{\mathfrak{g}}
+\def\fh{\mathfrak{h}}
+\def\fi{\mathfrak{i}}
+\def\fj{\mathfrak{j}}
+\def\fk{\mathfrak{k}}
+\def\fl{\mathfrak{l}}
+\def\fm{\mathfrak{m}}
+\def\fn{\mathfrak{n}}
+\def\fo{\mathfrak{o}}
+\def\fp{\mathfrak{p}}
+\def\fq{\mathfrak{q}}
+\def\fr{\mathfrak{r}}
+\def\fs{\mathfrak{s}}
+\def\ft{\mathfrak{t}}
+\def\fu{\mathfrak{u}}
+\def\fv{\mathfrak{v}}
+\def\fw{\mathfrak{w}}
+\def\fx{\mathfrak{x}}
+\def\fy{\mathfrak{y}}
+\def\fz{\mathfrak{z}}
+
 \def\codeblock[source]{\pre{\code{\source}}}
 \def\highlighted[lang][source]{\codeblock{\source}}
 
@@ -67,3 +94,4 @@
 
 \def\dom{\text{dom}}
 \def\cod{\text{cod}}
+\def\span{\text{span}}

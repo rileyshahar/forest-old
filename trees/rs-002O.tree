@@ -1,0 +1,11 @@
+\title{Nilpotent lie algebra}
+\date{2023-10-20}
+\taxon{definition}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{A [Lie algebra](rs-001S) is \em{nilpotent} if its [lower central
+series](rs-002N) is eventually #{0}.}

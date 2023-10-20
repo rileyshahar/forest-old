@@ -1,0 +1,12 @@
+\title{derived series}
+\date{2023-10-20}
+\taxon{definition}
+\author{rileyshahar}
+
+\texpackage{preamble}
+\texpackage{quiver}
+\import{macros01}
+
+\p{Let #{\fg} be a [Lie algebra](rs-001S). The \em{derived series} of #{\fg} is
+##{\fg\supseteq \fg' \supseteq \fg'' \supseteq \cdots,} where #{(-)'} denotes
+the [derived algebra](rs-002G).}
